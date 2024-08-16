@@ -158,6 +158,13 @@
       "dependencies": {},
       "hash": "f2a2b1317bb870661312a863fe8aadd3d1dced3c"
     },
+    "com.winterwiregames.visualeffectparameters": {
+      "version": "https://github.com/Winterwire-Games/Visual-Effect-Parameters-Package.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "66bcea2855a8d69a91e674c0f78d1414b248111c"
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
