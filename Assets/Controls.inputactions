@@ -24,9 +24,18 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Shoot",
+                    "name": "Quick Shot",
                     "type": "Button",
                     "id": "7d8665fb-156a-4f31-b53e-006ec445eec9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Charge Shot",
+                    "type": "Button",
+                    "id": "710fd15c-7a85-45d5-b513-8a15fe0aca4a",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -184,7 +193,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Shoot",
+                    "action": "Quick Shot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -195,7 +204,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Shoot",
+                    "action": "Quick Shot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -206,7 +215,40 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Shoot",
+                    "action": "Quick Shot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "10781af7-c591-48eb-bf92-97cf7a12f9bf",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Charge Shot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "24e6e539-e418-4553-bac9-6eb734cce101",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Charge Shot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "58183d40-d37b-4f3b-98a6-6eae478dea67",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Charge Shot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
