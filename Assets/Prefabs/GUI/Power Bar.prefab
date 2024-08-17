@@ -348,7 +348,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  FormatString: F0
+  FormatString: F1
 --- !u!1 &7782654200935078221
 GameObject:
   m_ObjectHideFlags: 0
