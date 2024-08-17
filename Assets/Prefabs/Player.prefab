@@ -367,6 +367,7 @@ GameObject:
   - component: {fileID: 7825186917106894293}
   - component: {fileID: 4595116039944133339}
   - component: {fileID: 1661973351026389679}
+  - component: {fileID: 9192419812682791764}
   m_Layer: 0
   m_Name: Shoot
   m_TagString: Untagged
@@ -449,6 +450,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 9192419812682791764}
+        m_TargetAssemblyTypeName: ShootHealth, Assembly-CSharp
+        m_MethodName: OnShot
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &9192419812682791764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2431981870491656619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c68cd8647a23345a8b037ba95feef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: {fileID: 5394661408977783863}
+  PowerCoefficient: 1
 --- !u!1 &3627335946028202799
 GameObject:
   m_ObjectHideFlags: 0
