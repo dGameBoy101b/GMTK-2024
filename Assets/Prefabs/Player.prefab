@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 3504863754584746088}
   - component: {fileID: 6847601737636222541}
   - component: {fileID: 5394661408977783863}
+  - component: {fileID: 4803273752722935490}
   m_Layer: 0
   m_Name: Blob
   m_TagString: Untagged
@@ -227,6 +228,22 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _currentHealth: 50
+--- !u!114 &4803273752722935490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723853814518234761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 250da3b3fa6f107468e91bd240e6b96d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: {fileID: 5394661408977783863}
+  OnEat:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1138238260205352841
 GameObject:
   m_ObjectHideFlags: 0
