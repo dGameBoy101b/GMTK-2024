@@ -433,11 +433,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Power Bar
       objectReference: {fileID: 0}
-    - target: {fileID: 8221384710656802537, guid: cc58833335b2cfc4696398c98c99aa49,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

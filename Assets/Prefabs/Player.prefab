@@ -424,7 +424,19 @@ MonoBehaviour:
   - Path: Quick Shot
     _onUpdate:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 6415026306178509039}
+          m_TargetAssemblyTypeName: PlayerQuickShoot, Assembly-CSharp
+          m_MethodName: OnQuickShoot
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - Path: Charge Shot
     _onUpdate:
       m_PersistentCalls:
@@ -752,6 +764,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 3283696503626244085}
   - {fileID: 7825186917106894293}
   m_Father: {fileID: 8585724146514721736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1000,6 +1013,68 @@ MonoBehaviour:
   BaseSpeed: 10
   HealthCoefficient: -0.08
   Health: {fileID: 5394661408977783863}
+--- !u!1 &6836725116941401774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3283696503626244085}
+  - component: {fileID: 6415026306178509039}
+  - component: {fileID: 5865159463373323418}
+  m_Layer: 3
+  m_Name: Quick Shoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3283696503626244085
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6836725116941401774}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1626344005690054930}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6415026306178509039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6836725116941401774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66472fab0ce3de4439cd4a24b362f96c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  QuickShoot: {fileID: 5865159463373323418}
+--- !u!114 &5865159463373323418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6836725116941401774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aff153151c0a6f84fb003f0104c7e434, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Shoot: {fileID: 6544726664989239774}
+  Cooldown: 0.3
+  Power: 1
+  IsShooting: 0
 --- !u!1 &7070008885471281267
 GameObject:
   m_ObjectHideFlags: 0
@@ -1251,11 +1326,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 546807460762129715, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 975996664348269826, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
         type: 3}
