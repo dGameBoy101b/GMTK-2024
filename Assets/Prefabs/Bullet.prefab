@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4576328126452094508}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 312722226201381541}
   - component: {fileID: 8061661212449750063}
   - component: {fileID: 4570689363125822440}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2644804739482557786}
   - component: {fileID: 3398988922755263884}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Size
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ GameObject:
   - component: {fileID: 135725081353394430}
   - component: {fileID: 6765827809443791887}
   - component: {fileID: 2963643277371567593}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -314,7 +314,7 @@ GameObject:
   - component: {fileID: 3661347890110004914}
   - component: {fileID: 6235062307714712277}
   - component: {fileID: 2019850811222874816}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Move
   m_TagString: Untagged
   m_Icon: {fileID: 0}
