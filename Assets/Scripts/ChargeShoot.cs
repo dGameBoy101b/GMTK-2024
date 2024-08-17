@@ -82,9 +82,7 @@ public class ChargeShoot : MonoBehaviour
 
 	public void UpdateCharge(float delta_time)
 	{
-		if (this.Shoot.IsCooling)
-			this.CurrentPower = this.Shoot.RemainingCooldown / this.LastCooldown * this.MaxPower;
-		else if (this.IsCharging)
+		if (!this.Shoot.IsCooling && this.IsCharging)
 			this.CurrentPower += this.ChargeRate * delta_time;
 		else
 			this.CurrentPower = 0;
