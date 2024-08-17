@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Serialization;
 
 public class ChargeShoot : MonoBehaviour
 {
@@ -14,6 +13,9 @@ public class ChargeShoot : MonoBehaviour
 	[Tooltip("How quickly power can charge up")]
 	[Min(0)]
 	public float ChargeRate = 1f;
+
+	[Tooltip("Invoked when this starts charging")]
+	public UnityEvent OnStartCharge = new();
 
 	[Tooltip("Invoked every frame while this is charging.\nParameter is current charge amount")]
 	public UnityEvent<float> OnChargeUp = new();
@@ -30,6 +32,9 @@ public class ChargeShoot : MonoBehaviour
 	[Tooltip("Invoked every frame while this cools down.\nParameter is current charge amount")]
 	public UnityEvent<float> OnCooldown = new();
 
+	[Tooltip("Invoked when this finishes cooling down")]
+	public UnityEvent OnCooldownEnd = new();
+
 	[SerializeField]
 	[Tooltip("The current amount of power this has charged")]
 	private float _currentPower = 0f;
@@ -41,10 +46,14 @@ public class ChargeShoot : MonoBehaviour
 			value = Mathf.Clamp(value, 0f, this.MaxPower);
 			var old = this._currentPower;
 			this._currentPower = value;
+			if (old == 0 && value > 0)
+				this.OnStartCharge.Invoke();
 			if (value > old)
 				this.OnChargeUp.Invoke(value);
 			if (value < old)
 				this.OnCooldown.Invoke(value);
+			if (old > 0 && value == 0)
+				this.OnCooldownEnd.Invoke();
 		}
 	}
 
@@ -77,6 +86,8 @@ public class ChargeShoot : MonoBehaviour
 			this.CurrentPower = this.Shoot.RemainingCooldown / this.LastCooldown * this.MaxPower;
 		else if (this.IsCharging)
 			this.CurrentPower += this.ChargeRate * delta_time;
+		else
+			this.CurrentPower = 0;
 	}
 
 	private void Update()
