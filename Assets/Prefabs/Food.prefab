@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7885913074896890563}
   - component: {fileID: 1234177431379078817}
   - component: {fileID: 6131656116958784722}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Food
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 7739728113267719244}
   - component: {fileID: 1404484760116272990}
   - component: {fileID: 1164624932540142881}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6993726413656985233}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
