@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 303552734959438751}
   - component: {fileID: 7763900741181282804}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Crosshair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 6847601737636222541}
   - component: {fileID: 5394661408977783863}
   - component: {fileID: 4803273752722935490}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Blob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 520629932932533632}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -286,7 +286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8585724146514721736}
   - component: {fileID: 8304216969605861272}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Input
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -385,7 +385,7 @@ GameObject:
   - component: {fileID: 4595116039944133339}
   - component: {fileID: 1661973351026389679}
   - component: {fileID: 9192419812682791764}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -504,7 +504,7 @@ GameObject:
   - component: {fileID: 6505106559106829366}
   - component: {fileID: 3811576539465246811}
   - component: {fileID: 7574155543618453183}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -725,7 +725,7 @@ GameObject:
   - component: {fileID: 1486066320898703478}
   - component: {fileID: 6518089753393134240}
   - component: {fileID: 5035159008923801546}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Movement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -853,7 +853,7 @@ GameObject:
   - component: {fileID: 1152284884663000013}
   - component: {fileID: 6279390202533682470}
   - component: {fileID: 9110447930977010092}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Aim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
