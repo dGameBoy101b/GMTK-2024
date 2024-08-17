@@ -418,13 +418,37 @@ MonoBehaviour:
   ChargeRate: 1
   OnChargeUp:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3399344672037189965}
+        m_TargetAssemblyTypeName: PowerBar, Assembly-CSharp
+        m_MethodName: UpdateValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _currentPower: 0
   Aim: {fileID: 9110447930977010092}
   Bullet: {fileID: 2963643277371567593, guid: 2a96ece28576afb42b2f7f85b4c831dd, type: 3}
   OnShot:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3399344672037189965}
+        m_TargetAssemblyTypeName: PowerBar, Assembly-CSharp
+        m_MethodName: UpdateValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3627335946028202799
 GameObject:
   m_ObjectHideFlags: 0
@@ -946,6 +970,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 546807460762129715, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2671677587006358376, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -966,6 +995,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: HUD
       objectReference: {fileID: 0}
+    - target: {fileID: 7783425059153494501, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
+        type: 3}
+      propertyPath: Shoot
+      value: 
+      objectReference: {fileID: 1661973351026389679}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -981,6 +1015,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc115fd58f21bcc4b83db36d0ac3db53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3399344672037189965 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7783425059153494501, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 4839296116574091432}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f416e1202abc0c4b90e80503a34e747, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!224 &5040471512756768169 stripped
