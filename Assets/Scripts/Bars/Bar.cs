@@ -18,14 +18,14 @@ public abstract class Bar : MonoBehaviour
 	{
 		this.Slider.minValue = this.Minimum;
 		this.Slider.maxValue = this.Maximum;
-		Debug.Log($"Range updated: {this.Minimum} - {this.Maximum}", this);
+		Debug.Log($"{this.name} range updated: {this.Minimum} - {this.Maximum}", this);
 		this.UpdateValue();
 	}
 
 	public void UpdateValue()
 	{
 		this.Slider.value = this.Value;
-		Debug.Log($"Value updated: {this.Value}", this);
+		Debug.Log($"{this.name} value updated: {this.Value}", this);
 		this.OnUpdateValue.Invoke(this.Value);
 	}
 

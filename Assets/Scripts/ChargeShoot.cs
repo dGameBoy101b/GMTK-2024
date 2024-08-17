@@ -28,7 +28,6 @@ public class ChargeShoot : MonoBehaviour
 	public float LastCooldown;
 
 	[Tooltip("Invoked every frame while this cools down.\nParameter is current charge amount")]
-	[FormerlySerializedAs("OnCoolDown")]
 	public UnityEvent<float> OnCooldown = new();
 
 	[SerializeField]
@@ -42,9 +41,9 @@ public class ChargeShoot : MonoBehaviour
 			value = Mathf.Clamp(value, 0f, this.MaxPower);
 			var old = this._currentPower;
 			this._currentPower = value;
-			if (old < value)
-				this.OnChargeUp.Invoke(value);
 			if (value > old)
+				this.OnChargeUp.Invoke(value);
+			if (value < old)
 				this.OnCooldown.Invoke(value);
 		}
 	}
@@ -54,7 +53,7 @@ public class ChargeShoot : MonoBehaviour
 		if (this.Shoot.IsCooling)
 			return;
 		this.LastCooldown = this.CurrentPower * this.PowerCooldownCoefficient + this.BaseCooldown;
-		this.Shoot.Cooldown = this.LastCooldown;
+		this.Shoot.MaxCooldown = this.LastCooldown;
 		this.Shoot.Shot();
 	}
 
@@ -75,7 +74,7 @@ public class ChargeShoot : MonoBehaviour
 	public void UpdateCharge(float delta_time)
 	{
 		if (this.Shoot.IsCooling)
-			this.CurrentPower -= this.LastCooldown * delta_time;
+			this.CurrentPower = this.Shoot.RemainingCooldown / this.LastCooldown * this.MaxPower;
 		else if (this.IsCharging)
 			this.CurrentPower += this.ChargeRate * delta_time;
 	}
