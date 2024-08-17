@@ -432,8 +432,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b011e9a5683c67b45855bd9b04cbf1e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxPower: 10
-  ChargeRate: 1
+  MaxPower: 5
+  ChargeRate: 3
   OnChargeUp:
     m_PersistentCalls:
       m_Calls:
