@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7609414158728488129}
   - component: {fileID: 3504863754584746088}
   - component: {fileID: 6847601737636222541}
+  - component: {fileID: 5394661408977783863}
   m_Layer: 0
   m_Name: Blob
   m_TagString: Untagged
@@ -97,6 +98,26 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &5394661408977783863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723853814518234761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6953772e2fdf484786901b64046038f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 100
+  OnIncrease:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDecrease:
+    m_PersistentCalls:
+      m_Calls: []
+  _currentHealth: 50
 --- !u!1 &1138238260205352841
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,6 +204,38 @@ MonoBehaviour:
         - m_Target: {fileID: 6518089753393134240}
           m_TargetAssemblyTypeName: PlayerMove, Assembly-CSharp
           m_MethodName: OnMove
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Path: Aim
+    _onUpdate:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: PlayerMove, Assembly-CSharp
+          m_MethodName: 
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Path: Shoot
+    _onUpdate:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: PlayerMove, Assembly-CSharp
+          m_MethodName: 
           m_Mode: 0
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
