@@ -169,7 +169,7 @@
                 {
                     "name": "",
                     "id": "80bcb17f-abdd-4ace-a243-fe4948edea6f",
-                    "path": "<Mouse>/position",
+                    "path": "<Pointer>/position",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
