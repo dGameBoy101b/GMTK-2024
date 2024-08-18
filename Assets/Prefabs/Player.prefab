@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6847601737636222541}
   - component: {fileID: 5394661408977783863}
   - component: {fileID: 4803273752722935490}
-  - component: {fileID: 5602412430841628156}
+  - component: {fileID: 7149780734546279411}
   m_Layer: 3
   m_Name: Blob
   m_TagString: Untagged
@@ -140,10 +140,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 5602412430841628156}
-        m_TargetAssemblyTypeName: HealthSize, Assembly-CSharp
+      - m_Target: {fileID: 7149780734546279411}
+        m_TargetAssemblyTypeName: Scaler, Assembly-CSharp
         m_MethodName: UpdateScale
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -179,10 +179,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 5602412430841628156}
-        m_TargetAssemblyTypeName: HealthSize, Assembly-CSharp
+      - m_Target: {fileID: 7149780734546279411}
+        m_TargetAssemblyTypeName: Scaler, Assembly-CSharp
         m_MethodName: UpdateScale
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -208,7 +208,7 @@ MonoBehaviour:
   OnEat:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &5602412430841628156
+--- !u!114 &7149780734546279411
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -217,13 +217,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 723853814518234761}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc023331a89cde145b837fd7e5fba737, type: 3}
+  m_Script: {fileID: 11500000, guid: 08c02400f23c7ad4d957d69dd81c4c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Transform: {fileID: 7609414158728488129}
   BaseScale: {x: 1, y: 1, z: 1}
-  Health: {fileID: 5394661408977783863}
-  HealthCoefficient: 0.01
+  Coefficient: 0.01
 --- !u!1 &1138238260205352841
 GameObject:
   m_ObjectHideFlags: 0
