@@ -20,7 +20,7 @@ public class VelocityWarp : MonoBehaviour
     void UpdateMaterialValues()
     {
         Vector3 velocity = transform.position - previousPosition;
-        velocityWarp = Vector3.Lerp(velocityWarp, velocity, 0.1f);
+        velocityWarp = Vector3.Lerp(velocityWarp, velocity, 2f*(1f/FPS));
         
         mat.SetVector("_VelocityWarp", velocityWarp);
         mat.SetVector("_Velocity", velocity);
