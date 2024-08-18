@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 3504863754584746088}
   - component: {fileID: 6847601737636222541}
   - component: {fileID: 4803273752722935490}
+  - component: {fileID: 5424054318979440947}
   m_Layer: 3
   m_Name: Blob
   m_TagString: Untagged
@@ -176,6 +177,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: {fileID: 5876617856893727584}
   OnEat:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &5424054318979440947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723853814518234761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b208364bc7fdef54ea65eccf44ecc6e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: {fileID: 5876617856893727584}
+  OnTakeDamage:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &1138238260205352841
@@ -1153,7 +1170,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0ac83a791ff35f4f9f2c9a644cb7876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Direction: {x: 1, y: 0}
+  _direction: {x: 1, y: 0}
+  OnDirectionChange:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6836725116941401774
 GameObject:
   m_ObjectHideFlags: 0
