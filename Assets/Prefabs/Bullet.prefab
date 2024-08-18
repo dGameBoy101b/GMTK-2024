@@ -512,7 +512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Body: {fileID: 135725081353394430}
-  MaxMoveSpeed: 0
+  MaxMoveSpeed: 10
   CurrentDirection: {x: 0, y: 0}
 --- !u!1 &8670518888618021480
 GameObject:
