@@ -649,7 +649,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3460192778022322415}
-  - component: {fileID: 3396068329450110278}
   - component: {fileID: 1400502147326283863}
   m_Layer: 3
   m_Name: Current
@@ -675,33 +674,6 @@ Transform:
   - {fileID: 1857169714759817667}
   m_Father: {fileID: 5840559901066359671}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3396068329450110278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4454144277476219745}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 561fdfbe825d16f48894bc03b7e4f9d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnStart:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1400502147326283863}
-        m_TargetAssemblyTypeName: HealthCurrent, Assembly-CSharp
-        m_MethodName: GetCurrentHealth
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 5876617856893727584}
-          m_ObjectArgumentAssemblyTypeName: Health, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1400502147326283863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1455,6 +1427,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1400502147326283863}
+        m_TargetAssemblyTypeName: HealthCurrent, Assembly-CSharp
+        m_MethodName: GetCurrentHealth
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5876617856893727584}
+          m_ObjectArgumentAssemblyTypeName: Health, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
