@@ -1,55 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &803940930805707835
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 53288101340102453}
-  - component: {fileID: 1121930900334495840}
-  m_Layer: 9
-  m_Name: Melee Attack
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &53288101340102453
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 803940930805707835}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9057392984501475277}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1121930900334495840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 803940930805707835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ca23a82b4ab22343bc091ca13aebf66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Hit: {fileID: 5099375449361996900, guid: 3195577a69e09644da52e1605b65fda2, type: 3}
-  _maxCooldown: 1
-  OnAttack:
-    m_PersistentCalls:
-      m_Calls: []
-  _remainingCooldown: 0
 --- !u!1 &3735501472726821614
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,6 +128,7 @@ GameObject:
   - component: {fileID: 246965778257780657}
   - component: {fileID: 2951495992191677308}
   - component: {fileID: 7644108742869406846}
+  - component: {fileID: 8742756210544677501}
   m_Layer: 9
   m_Name: Enemy
   m_TagString: Untagged
@@ -230,7 +181,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &246965778257780657
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -295,6 +246,25 @@ MonoBehaviour:
   OnTakeDamage:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8742756210544677501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5297731487232700916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ca23a82b4ab22343bc091ca13aebf66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hit: {fileID: 5099375449361996900, guid: 3195577a69e09644da52e1605b65fda2, type: 3}
+  _maxCooldown: 1
+  _cooldownRate: 1
+  OnAttack:
+    m_PersistentCalls:
+      m_Calls: []
+  _remainingCooldown: 0
 --- !u!1 &8356545390405237014
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,8 +295,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 53288101340102453}
+  m_Children: []
   m_Father: {fileID: 8297050495991601405}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6365149123517898738
