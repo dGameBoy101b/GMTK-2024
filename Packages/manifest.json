@@ -15,6 +15,7 @@
     "com.unity.ugui": "1.0.0",
     "com.unity.visualscripting": "1.9.1",
     "com.winterwiregames.fmod-parameters": "https://github.com/Winterwire-Games/FMOD-Parameters.git",
+    "com.winterwiregames.option-io-components": "https://github.com/Winterwire-Games/Option-IO-Components-Package.git",
     "com.winterwiregames.visualeffectparameters": "https://github.com/Winterwire-Games/Visual-Effect-Parameters-Package.git",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",

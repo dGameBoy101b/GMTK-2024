@@ -202,6 +202,13 @@
       "dependencies": {},
       "hash": "f2a2b1317bb870661312a863fe8aadd3d1dced3c"
     },
+    "com.winterwiregames.option-io-components": {
+      "version": "https://github.com/Winterwire-Games/Option-IO-Components-Package.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "46012336fc59579aadd3810a5810a7bd91440168"
+    },
     "com.winterwiregames.visualeffectparameters": {
       "version": "https://github.com/Winterwire-Games/Visual-Effect-Parameters-Package.git",
       "depth": 0,
