@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GreyGoo
+  m_Name: Virus
   m_Shader: {fileID: -6465566751694194690, guid: c891fcd25dde12845ba3afed2da62053,
     type: 3}
   m_Parent: {fileID: 0}
@@ -55,18 +55,24 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _GameTime: 0
+    - _Metallic: 0
     - _NoiseOffset: 0.05
     - _NoiseScale: 1.17
     - _NoiseSpeed: 0.17
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _UVNoiseOffset: 0.2
-    - _UVNoiseScale: 2
+    - _Time: 0
+    - _UVNoiseOffset: 5.55
+    - _UVNoiseScale: 1.13
     - _UVNoiseSpeed: 0.1
     - _VelosityWarpStrength: 100
-    - _WorldNoiseOffset: 0.85
-    - _WorldNoiseScale: 0.05
+    - _WorldNoiseOffset: 0.52
+    - _WorldNoiseScale: 0.37
     m_Colors:
-    - _Velocity: {r: 1.4, g: 0, b: 0, a: 0}
+    - _Color: {r: 0.19999997, g: 0.75673544, b: 0.8980392, a: 0}
+    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}
+    - _Velocity: {r: 0, g: 0, b: 0, a: 0}
     - _VelocityWarp: {r: 0, g: 0, b: 0, a: 0}
+    - _WorldPosition: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
