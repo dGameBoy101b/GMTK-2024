@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace WinterwireGames.ValueMapping
 {
+	using MoveDirection = UnityEngine.EventSystems.MoveDirection;
 	[AddComponentMenu("Value Mapping/Move Event Value Map")]
 	public class MoveEventValueMap : ValueMap<MoveDirection>
 	{
