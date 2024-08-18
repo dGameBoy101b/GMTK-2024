@@ -63,6 +63,7 @@ public class ChargeShoot : MonoBehaviour
 			return;
 		this.LastCooldown = this.CurrentPower * this.PowerCooldownCoefficient + this.BaseCooldown;
 		this.Shoot.MaxCooldown = this.LastCooldown;
+		this.Shoot.Power = this.CurrentPower;
 		this.Shoot.Shot();
 	}
 
