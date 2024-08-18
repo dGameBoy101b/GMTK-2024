@@ -6,6 +6,9 @@ public class PlayerAim : MonoBehaviour
 	[Tooltip("The aim component to control")]
 	public Aim Aim;
 
+	[Tooltip("The scaling applied to non-pointer directions")]
+	public float Radius = 1f;
+
 	[SerializeField]
 	[Tooltip("The camera used to convert pointer positions to world space.\nDefaults to the main camera")]
 	private Camera _camera;
@@ -38,7 +41,7 @@ public class PlayerAim : MonoBehaviour
 		}
 		this.Aim.Direction = this.IsPointer
 			? this.CalculatePointerDirection(value)
-			: value.normalized;
+			: value * this.Radius;
 	}
 
 	public Vector2 CalculatePointerDirection(Vector2 pointer_position)
@@ -48,7 +51,7 @@ public class PlayerAim : MonoBehaviour
 			pointer_position.y,
 			Vector3.Dot(this.Aim.transform.position - this.Camera.transform.position, this.Camera.transform.forward));
 		var world = this.Camera.ScreenToWorldPoint(screen);
-		return (world - this.Aim.transform.position) / this.Aim.Radius;
+		return world - this.Aim.transform.position;
 	}
 
 	public void UpdateDirection()
