@@ -16,6 +16,16 @@ public class MeleeAttack : MonoBehaviour
 		set => this._maxCooldown = Mathf.Max(0, value);
 	}
 
+	[SerializeField]
+	[Tooltip("The rate at which this cools down")]
+	[Min(0)]
+	private float _cooldownRate = 1f;
+	public float CooldownRate
+	{
+		get => this._cooldownRate;
+		set => this._cooldownRate = Mathf.Max(0, value);
+	}
+
 	[Tooltip("Invoked when this attacks")]
 	public UnityEvent OnAttack = new();
 
@@ -31,7 +41,7 @@ public class MeleeAttack : MonoBehaviour
 
 	public bool IsCooling => this.RemainingCooldown > 0;
 
-	public void Attack(Vector3 position, Quaternion rotation)
+	public void Strike(Vector3 position, Quaternion rotation)
 	{
 		if (this.IsCooling)
 			return;
@@ -40,18 +50,28 @@ public class MeleeAttack : MonoBehaviour
 		this.OnAttack.Invoke();
 	}
 
-	public void Attack(Collision2D collision)
+	public void Strike(Collision2D collision)
 	{
 		if (this.IsCooling)
 			return;
 		var point = collision.GetContact(0).point;
 		Vector3 position = new(point.x, point.y, this.transform.position.z);
 		Quaternion rotation = Quaternion.LookRotation(position - this.transform.position);
-		this.Attack(position, rotation);
+		this.Strike(position, rotation);
 	}
 
-	private void OnCollisionEnter2D(Collision2D collision)
+	public void UpdateCooldown(float delta_time)
 	{
-		this.Attack(collision);
+		this.RemainingCooldown -= this.CooldownRate * delta_time;
+	}
+
+	private void Update()
+	{
+		this.UpdateCooldown(Time.deltaTime);
+	}
+
+	private void OnCollisionStay2D(Collision2D collision)
+	{
+		this.Strike(collision);
 	}
 }
