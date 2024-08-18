@@ -714,7 +714,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 604017079024373193}
+      - m_Target: {fileID: 1079983678846612598}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -726,9 +726,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 5666599144813405610}
-        m_TargetAssemblyTypeName: Bar, Assembly-CSharp
-        m_MethodName: UpdateRange
+      - m_Target: {fileID: 8386184877058936200}
+        m_TargetAssemblyTypeName: RadialBar, Assembly-CSharp
+        m_MethodName: UpdateBar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -743,9 +743,9 @@ MonoBehaviour:
   OnCooldown:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5666599144813405610}
-        m_TargetAssemblyTypeName: Bar, Assembly-CSharp
-        m_MethodName: UpdateValue
+      - m_Target: {fileID: 8386184877058936200}
+        m_TargetAssemblyTypeName: RadialBar, Assembly-CSharp
+        m_MethodName: UpdateBar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -758,7 +758,7 @@ MonoBehaviour:
   OnCooldownEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 604017079024373193}
+      - m_Target: {fileID: 1079983678846612598}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -1256,6 +1256,16 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3983738001850807584, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
+        type: 3}
+      propertyPath: Shoot
+      value: 
+      objectReference: {fileID: 6544726664989239774}
+    - target: {fileID: 5608245161416740062, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7463943523762560666, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
         type: 3}
       propertyPath: Health
@@ -1277,13 +1287,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9110447930977010092}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5424942512338318689, guid: 83d00b21b96d4414ebef43cdc7c1f3d3, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d00b21b96d4414ebef43cdc7c1f3d3, type: 3}
---- !u!1 &604017079024373193 stripped
+--- !u!1 &1079983678846612598 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 5424942512338318689, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
+  m_CorrespondingSourceObject: {fileID: 5608245161416740062, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
     type: 3}
   m_PrefabInstance: {fileID: 4839296116574091432}
   m_PrefabAsset: {fileID: 0}
@@ -1317,21 +1328,21 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 4839296116574091432}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5666599144813405610 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 975996664348269826, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
-    type: 3}
-  m_PrefabInstance: {fileID: 4839296116574091432}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 604017079024373193}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c702cc4c76168c148b50ca141ac5d1d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6532391303130942015 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1841714317958574743, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
     type: 3}
   m_PrefabInstance: {fileID: 4839296116574091432}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8386184877058936200 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3983738001850807584, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 4839296116574091432}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079983678846612598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3d7af5dc102db446b598444c2cc1530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
