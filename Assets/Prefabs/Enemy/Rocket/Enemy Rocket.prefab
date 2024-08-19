@@ -4983,6 +4983,41 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3612949995260686391, guid: cbc40997393248f4abfbc840c148c067,
+        type: 3}
+      propertyPath: EventReference.Path
+      value: event:/SFX/Mob/Spaceship Idle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612949995260686391, guid: cbc40997393248f4abfbc840c148c067,
+        type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612949995260686391, guid: cbc40997393248f4abfbc840c148c067,
+        type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612949995260686391, guid: cbc40997393248f4abfbc840c148c067,
+        type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -1100525153
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612949995260686391, guid: cbc40997393248f4abfbc840c148c067,
+        type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1130405994
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612949995260686391, guid: cbc40997393248f4abfbc840c148c067,
+        type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: -1254976096
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612949995260686391, guid: cbc40997393248f4abfbc840c148c067,
+        type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: 274249942
+      objectReference: {fileID: 0}
     - target: {fileID: 5297731487232700916, guid: cbc40997393248f4abfbc840c148c067,
         type: 3}
       propertyPath: m_Name
