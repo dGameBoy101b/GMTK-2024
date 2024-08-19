@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{c67def46-5e67-41a2-84de-9a9e88c81be3}">
+	<object class="AudioFile" id="{0c7d62e2-790b-4fff-9091-92bb11dfd5b8}">
 		<property name="assetPath">
-			<value>SFX/Player/Absorb/player-absorb-gulp-1.wav</value>
+			<value>SFX/Player/Absorb/player-absorb-slurp-3.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
 		</property>
 		<property name="channelCount">
-			<value>2</value>
+			<value>6</value>
 		</property>
 		<property name="length">
 			<value>1.3592500000000001</value>

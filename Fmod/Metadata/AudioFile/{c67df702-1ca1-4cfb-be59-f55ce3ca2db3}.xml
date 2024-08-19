@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{ba98d525-75f7-47c5-8fb2-afeda39d81b2}">
+	<object class="AudioFile" id="{c67df702-1ca1-4cfb-be59-f55ce3ca2db3}">
 		<property name="assetPath">
-			<value>SFX/Player/Absorb/player-absorb-squelch-3.wav</value>
+			<value>SFX/Player/Absorb/player-absorb-bubble-3.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
 		</property>
 		<property name="channelCount">
-			<value>2</value>
+			<value>6</value>
 		</property>
 		<property name="length">
 			<value>1.3592500000000001</value>
