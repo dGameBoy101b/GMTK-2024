@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555c5a3d25c2c58459401e6263784114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _chance: 0.5
+  _chance: 0.75
   OnSuccess:
     m_PersistentCalls:
       m_Calls:
