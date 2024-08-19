@@ -1,5 +1,89 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8196561843560506609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8283191969750232723}
+  - component: {fileID: 638105460188993722}
+  - component: {fileID: 8222618636530207028}
+  m_Layer: 0
+  m_Name: Delay Switch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8283191969750232723
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8196561843560506609}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5389734734827275164}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &638105460188993722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8196561843560506609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c32ad3c3d33079418e27660e2d76d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _toDisable:
+  - {fileID: 0}
+  _toEnable:
+  - {fileID: 0}
+--- !u!114 &8222618636530207028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8196561843560506609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee2600fb1fb347140a49efdabc4b9bb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _delay: 1.5
+  _onTimeUp:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 638105460188993722}
+        m_TargetAssemblyTypeName: PaneSwitcher, Assembly-CSharp
+        m_MethodName: SwitchPanes
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onCancel:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &3802908205568331637
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8,10 +92,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2278696178861319999, guid: 7b202817fb4c0e24f98c243daf9323ab,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2278696178861319999, guid: 7b202817fb4c0e24f98c243daf9323ab,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3189246214096168082, guid: 7b202817fb4c0e24f98c243daf9323ab,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3189246214096168082, guid: 7b202817fb4c0e24f98c243daf9323ab,
         type: 3}
@@ -20,9 +114,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3189246214096168082, guid: 7b202817fb4c0e24f98c243daf9323ab,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189246214096168082, guid: 7b202817fb4c0e24f98c243daf9323ab,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 4139765071504866752}
+      objectReference: {fileID: 8222618636530207028}
     - target: {fileID: 3189246214096168082, guid: 7b202817fb4c0e24f98c243daf9323ab,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -30,18 +129,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3189246214096168082, guid: 7b202817fb4c0e24f98c243daf9323ab,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189246214096168082, guid: 7b202817fb4c0e24f98c243daf9323ab,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SwitchPanes
+      value: Invoke
       objectReference: {fileID: 0}
     - target: {fileID: 3189246214096168082, guid: 7b202817fb4c0e24f98c243daf9323ab,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: PaneSwitcher, Assembly-CSharp
+      value: WinterwireGames.Events.DelayEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189246214096168082, guid: 7b202817fb4c0e24f98c243daf9323ab,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: FMODUnity.StudioEventEmitter, FMODUnity
       objectReference: {fileID: 0}
     - target: {fileID: 3189246214096168082, guid: 7b202817fb4c0e24f98c243daf9323ab,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6548229215288709496, guid: 7b202817fb4c0e24f98c243daf9323ab,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -40
       objectReference: {fileID: 0}
     - target: {fileID: 7336937744170705371, guid: 7b202817fb4c0e24f98c243daf9323ab,
         type: 3}
@@ -53,6 +167,12 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 72
       objectReference: {fileID: 0}
+    - target: {fileID: 8342870768649883219, guid: 7b202817fb4c0e24f98c243daf9323ab,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2c99a5ffb5fe0c749abfefe173c88017,
+        type: 3}
     - target: {fileID: 9082225470793534697, guid: 7b202817fb4c0e24f98c243daf9323ab,
         type: 3}
       propertyPath: m_Pivot.x
@@ -155,32 +275,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 9124486403869318257, guid: 7b202817fb4c0e24f98c243daf9323ab,
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 9082225470793534697, guid: 7b202817fb4c0e24f98c243daf9323ab,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4139765071504866752}
+      addedObject: {fileID: 8283191969750232723}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b202817fb4c0e24f98c243daf9323ab, type: 3}
---- !u!1 &5360995320867230468 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9124486403869318257, guid: 7b202817fb4c0e24f98c243daf9323ab,
+--- !u!224 &5389734734827275164 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 9082225470793534697, guid: 7b202817fb4c0e24f98c243daf9323ab,
     type: 3}
   m_PrefabInstance: {fileID: 3802908205568331637}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4139765071504866752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5360995320867230468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c32ad3c3d33079418e27660e2d76d71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _toDisable:
-  - {fileID: 0}
-  _toEnable:
-  - {fileID: 0}
