@@ -29,8 +29,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5944346571410884360}
+  m_Children: []
   m_Father: {fileID: 4606618227011158449}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5470010835983637772
@@ -48,9 +47,9 @@ MonoBehaviour:
   OnDirection:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2220841311509657586}
-        m_TargetAssemblyTypeName: MoveDirection, Assembly-CSharp
-        m_MethodName: UpdateDirection
+      - m_Target: {fileID: 6235062307714712277}
+        m_TargetAssemblyTypeName: Move, Assembly-CSharp
+        m_MethodName: set_CurrentDirection
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -111,9 +110,9 @@ MonoBehaviour:
   OnPower:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4943624696890311413}
-        m_TargetAssemblyTypeName: Scaler, Assembly-CSharp
-        m_MethodName: UpdateScale
+      - m_Target: {fileID: 5816406915363981005}
+        m_TargetAssemblyTypeName: Calculator`2[[System.Single, mscorlib
+        m_MethodName: DoCalculation
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -123,9 +122,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8870210439176622799}
-        m_TargetAssemblyTypeName: Lifetime, Assembly-CSharp
-        m_MethodName: StartLife
+      - m_Target: {fileID: 7295456208448852408}
+        m_TargetAssemblyTypeName: Calculator`2[[System.Single, mscorlib
+        m_MethodName: DoCalculation
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -135,9 +134,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4272894667705531676}
-        m_TargetAssemblyTypeName: MoveSpeed, Assembly-CSharp
-        m_MethodName: UpdateMoveSpeed
+      - m_Target: {fileID: 5140519275341390143}
+        m_TargetAssemblyTypeName: Calculator`2[[System.Single, mscorlib
+        m_MethodName: DoCalculation
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6313970869822801448}
+        m_TargetAssemblyTypeName: Explode, Assembly-CSharp
+        m_MethodName: set_Power
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -223,8 +234,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cda17aae37eb4a49aafcececf039a4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Power: 1
-  Explosion: {fileID: 7803762036083640360, guid: f58638fdc8f6619438e8e85c2003eac8,
+  _power: 1
+  _explosion: {fileID: 7803762036083640360, guid: f58638fdc8f6619438e8e85c2003eac8,
     type: 3}
 --- !u!1 &4462110546764275469
 GameObject:
@@ -318,7 +329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2644804739482557786}
-  - component: {fileID: 4943624696890311413}
+  - component: {fileID: 5816406915363981005}
   m_Layer: 8
   m_Name: Size
   m_TagString: Untagged
@@ -341,7 +352,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5632608922043229077}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4943624696890311413
+--- !u!114 &5816406915363981005
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -350,11 +361,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 4672296324128788069}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08c02400f23c7ad4d957d69dd81c4c10, type: 3}
+  m_Script: {fileID: 11500000, guid: d29d10991c971394e9c81cb95c52f013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Transform: {fileID: 4606618227011158449}
-  BaseScale: {x: 1, y: 1, z: 1}
+  OnOutput:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4606618227011158449}
+        m_TargetAssemblyTypeName: UnityEngine.Transform, UnityEngine
+        m_MethodName: set_localScale
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Base: {x: 1, y: 1, z: 1}
   Coefficient: 0.2
 --- !u!1 &7959676755705872661
 GameObject:
@@ -559,9 +584,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a6c075400b939d458fc71b14783b73f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Body: {fileID: 135725081353394430}
-  MaxMoveSpeed: 10
-  CurrentDirection: {x: 0, y: 0}
+  _body: {fileID: 135725081353394430}
+  _maxMoveSpeed: 10
+  _currentDirection: {x: 0, y: 0}
 --- !u!1 &8670518888618021480
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,7 +596,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1713529192732087909}
-  - component: {fileID: 4272894667705531676}
+  - component: {fileID: 5140519275341390143}
   m_Layer: 8
   m_Name: Move Speed
   m_TagString: Untagged
@@ -594,7 +619,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5632608922043229077}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4272894667705531676
+--- !u!114 &5140519275341390143
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -603,57 +628,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 8670518888618021480}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2cca67a686c089449bb749990ac2f4a, type: 3}
+  m_Script: {fileID: 11500000, guid: 67712958eef48fe46a6d11a03e3bf150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Move: {fileID: 6235062307714712277}
-  BaseSpeed: 0
+  OnOutput:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6235062307714712277}
+        m_TargetAssemblyTypeName: Move, Assembly-CSharp
+        m_MethodName: set_MaxMoveSpeed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Base: 10
   Coefficient: 1
---- !u!1 &9085547332280908707
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5944346571410884360}
-  - component: {fileID: 2220841311509657586}
-  m_Layer: 8
-  m_Name: Move Direction
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5944346571410884360
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9085547332280908707}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7477287097285557830}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2220841311509657586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9085547332280908707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1144f3fa79d6ac4a8aa2cd7f279fad8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Move: {fileID: 6235062307714712277}
 --- !u!1 &9172936831742656738
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,7 +657,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4434750299602300105}
-  - component: {fileID: 8870210439176622799}
+  - component: {fileID: 7295456208448852408}
+  - component: {fileID: 1185949767521065471}
+  - component: {fileID: 2806918360206501591}
   m_Layer: 8
   m_Name: Lifetime
   m_TagString: Untagged
@@ -686,7 +682,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5632608922043229077}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8870210439176622799
+--- !u!114 &7295456208448852408
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -695,9 +691,75 @@ MonoBehaviour:
   m_GameObject: {fileID: 9172936831742656738}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33fadccf48610234b858c8d49072daf0, type: 3}
+  m_Script: {fileID: 11500000, guid: 67712958eef48fe46a6d11a03e3bf150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameObject: {fileID: 7959676755705872661}
-  BaseLifetime: 1
+  OnOutput:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1185949767521065471}
+        m_TargetAssemblyTypeName: Delay, Assembly-CSharp
+        m_MethodName: set_Duration
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1185949767521065471}
+        m_TargetAssemblyTypeName: Delay, Assembly-CSharp
+        m_MethodName: StartTimer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Base: 1
   Coefficient: 0.1
+--- !u!114 &1185949767521065471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9172936831742656738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 115dda0eba3b57040b0aac6aea1571f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _duration: 0
+  OnDone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2806918360206501591}
+        m_TargetAssemblyTypeName: Destroyer, Assembly-CSharp
+        m_MethodName: Destroy
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7959676755705872661}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2806918360206501591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9172936831742656738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 193e0a40cebd08a42be7624ef36f9a00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

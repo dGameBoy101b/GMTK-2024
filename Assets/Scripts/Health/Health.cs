@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -13,6 +11,9 @@ public class Health : MonoBehaviour
 
 	[Tooltip("Invoked when health decreases.\nParameter is current health")]
 	public UnityEvent<float> OnDecrease = new();
+
+	[Tooltip("Invoked when this drops to 0 health")]
+	public UnityEvent OnEmpty = new();
 
 	[SerializeField]
 	[Tooltip("The health this currently has")]
@@ -29,6 +30,10 @@ public class Health : MonoBehaviour
 				this.OnIncrease.Invoke(value);
 			if (old > value)
 				this.OnDecrease.Invoke(value);
+			if (old > 0 && value == 0)
+				this.OnEmpty.Invoke();
 		}
 	}
+
+	public void Increase(float amount) => this.CurrentHealth += amount;
 }

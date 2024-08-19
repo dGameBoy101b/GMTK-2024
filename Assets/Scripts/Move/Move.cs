@@ -1,16 +1,38 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Move : MonoBehaviour
 {
+	[SerializeField]
+	[FormerlySerializedAs("Body")]
 	[Tooltip("The body to control")]
-	public Rigidbody2D Body;
+	private Rigidbody2D _body;
+	public Rigidbody2D Body
+	{
+		get => this._body;
+		set => this._body = value;
+	}
 
+	[SerializeField]
 	[Tooltip("How quickly this should move at max speed")]
+	[FormerlySerializedAs("MaxMoveSpeed")]
 	[Min(0)]
-	public float MaxMoveSpeed = 1f;
+	private float _maxMoveSpeed = 1f;
+	public float MaxMoveSpeed
+	{
+		get => this._maxMoveSpeed;
+		set => this._maxMoveSpeed = Mathf.Max(0, value);
+	}
 
+	[SerializeField]
 	[Tooltip("What direction this is currently moving")]
-	public Vector2 CurrentDirection = Vector2.zero;
+	[FormerlySerializedAs("CurrentDirection")]
+	private Vector2 _currentDirection = Vector2.zero;
+	public Vector2 CurrentDirection
+	{
+		get => this._currentDirection;
+		set => this._currentDirection = value;
+	}
 
 	private void FixedUpdate()
 	{
