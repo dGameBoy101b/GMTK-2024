@@ -2,10 +2,10 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{b5194286-dbbc-4012-90c5-8b85b263f8bf}">
 		<property name="name">
-			<value>Player Hurt</value>
+			<value>Grow</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{54ab6b5c-35f5-4906-bd21-ef99983f4d82}</destination>
@@ -59,11 +59,18 @@
 	<object class="EventAutomatableProperties" id="{939d4f2a-1022-4915-9fc4-09caa3d2abe6}" />
 	<object class="MarkerTrack" id="{affaf31f-4c94-4db0-9081-4575680ca596}" />
 	<object class="GroupTrack" id="{376b3078-4c58-4b14-bf1c-7c1f7639ae49}">
+		<relationship name="modules">
+			<destination>{cef5ec13-cb3c-4bf3-92e3-4b0f104161fa}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{8a0fe175-e96a-43d1-8b7d-8978e5d2e1d4}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{d9bf93ce-aae9-4188-9a7d-09bb20115f16}" />
+	<object class="Timeline" id="{d9bf93ce-aae9-4188-9a7d-09bb20115f16}">
+		<relationship name="modules">
+			<destination>{cef5ec13-cb3c-4bf3-92e3-4b0f104161fa}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{20962809-a25b-4cfb-afb6-1596dfb2cbfc}">
 		<relationship name="effectChain">
 			<destination>{abe3f510-4373-4f3f-8e8c-3a92524ffde8}</destination>
@@ -81,9 +88,17 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{79e4b0f6-f8a7-4324-81fc-cd8afaa742ce}" />
+	<object class="SingleSound" id="{cef5ec13-cb3c-4bf3-92e3-4b0f104161fa}">
+		<property name="length">
+			<value>1.3592500000000001</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{cf5c4829-e048-4149-8405-57ea64bd93f9}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{8a0fe175-e96a-43d1-8b7d-8978e5d2e1d4}">
 		<property name="name">
-			<value>hurt</value>
+			<value>grow</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{8e5dac04-3b57-4d89-a733-0a9ebc234bc7}</destination>
