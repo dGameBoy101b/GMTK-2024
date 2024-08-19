@@ -64,7 +64,20 @@
 			<destination>{8d1cf616-f182-46df-9c8c-4e5195cbc6a7}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{6651f48d-2d32-4b71-b6ce-1d2094125d9c}" />
+	<object class="EventAutomatableProperties" id="{6651f48d-2d32-4b71-b6ce-1d2094125d9c}">
+		<property name="maxVoices">
+			<value>5</value>
+		</property>
+		<property name="voiceStealing">
+			<value>4</value>
+		</property>
+		<property name="minimumDistance">
+			<value>0</value>
+		</property>
+		<property name="maximumDistance">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{6a0492df-f5bd-4750-8b68-8a1e74c46939}" />
 	<object class="MarkerTrack" id="{4b21c528-20b4-44b6-a191-1972b32aff20}" />
 	<object class="MarkerTrack" id="{5fd4ff00-c6c4-414f-9be6-6f4b5a633a18}" />
@@ -253,6 +266,7 @@
 	<object class="MixerBusEffectChain" id="{c08f8068-f444-447d-b745-3ec0d095a467}">
 		<relationship name="effects">
 			<destination>{190dba78-0a14-4486-877f-9cd54d61612c}</destination>
+			<destination>{c70f9c37-502d-4319-a6db-2a93140a0441}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{bca78254-4d5b-448b-993c-54190d747372}" />
@@ -324,6 +338,17 @@
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{190dba78-0a14-4486-877f-9cd54d61612c}" />
+	<object class="ObjectSpatialiserEffect" id="{c70f9c37-502d-4319-a6db-2a93140a0441}">
+		<property name="extentMode">
+			<value>1</value>
+		</property>
+		<property name="soundSize">
+			<value>5</value>
+		</property>
+		<property name="minimumExtent">
+			<value>45</value>
+		</property>
+	</object>
 	<object class="AutomationPoint" id="{59da156f-9fc7-477c-ad94-febbbc7099f8}">
 		<property name="position">
 			<value>0</value>

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{116a3e39-4e54-44f7-b48e-9577c1685904}">
 		<property name="name">
-			<value>Charge Shot Impact</value>
+			<value>Charge Shot Launch</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -56,7 +56,11 @@
 			<destination>{8d1cf616-f182-46df-9c8c-4e5195cbc6a7}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{9a15cd9b-7667-4465-8785-8866e8057676}" />
+	<object class="EventAutomatableProperties" id="{9a15cd9b-7667-4465-8785-8866e8057676}">
+		<property name="maxVoices">
+			<value>1</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{38bc7675-ba8d-4b1d-94a7-385202b775e8}" />
 	<object class="GroupTrack" id="{43987df6-e4f6-41d1-9577-40cd0271d08a}">
 		<relationship name="modules">
@@ -98,9 +102,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{1e5cc7fc-76ef-4481-b16c-0ef2c602b55a}">
-		<property name="volume">
-			<value>-5.5</value>
-		</property>
 		<property name="name">
 			<value>impact</value>
 		</property>

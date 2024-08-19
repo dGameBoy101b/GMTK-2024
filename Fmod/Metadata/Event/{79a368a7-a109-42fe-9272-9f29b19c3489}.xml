@@ -61,7 +61,20 @@
 			<destination>{8d1cf616-f182-46df-9c8c-4e5195cbc6a7}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{f3992fd8-0159-4b4b-9dca-6cc9d0a7553b}" />
+	<object class="EventAutomatableProperties" id="{f3992fd8-0159-4b4b-9dca-6cc9d0a7553b}">
+		<property name="maxVoices">
+			<value>5</value>
+		</property>
+		<property name="voiceStealing">
+			<value>4</value>
+		</property>
+		<property name="minimumDistance">
+			<value>0</value>
+		</property>
+		<property name="maximumDistance">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{67bfbf7d-bb8d-433d-9808-528cc2017deb}" />
 	<object class="MarkerTrack" id="{4bae828d-0c95-4c44-8d45-9b756afb93b0}" />
 	<object class="MarkerTrack" id="{e439dda7-1be2-4c49-8c80-f70f478c8699}" />
@@ -87,6 +100,9 @@
 	<object class="EventMixerMaster" id="{fca3e0b6-c559-401d-9d65-d3527295d544}">
 		<relationship name="automators">
 			<destination>{edda08f7-0232-44df-9f96-0cde804184b7}</destination>
+		</relationship>
+		<relationship name="modulators">
+			<destination>{e2becfdf-79eb-4e31-a17e-f20f683a4556}</destination>
 		</relationship>
 		<relationship name="effectChain">
 			<destination>{582a94f1-aa5d-4465-913f-0b70a2796078}</destination>
@@ -198,9 +214,18 @@
 			<destination>{19668826-2e59-46cd-a9fc-9574c36fb87a}</destination>
 		</relationship>
 	</object>
+	<object class="RandomizerModulator" id="{e2becfdf-79eb-4e31-a17e-f20f683a4556}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>20.8333321</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{582a94f1-aa5d-4465-913f-0b70a2796078}">
 		<relationship name="effects">
 			<destination>{f189fd59-94a6-4912-9d48-0e7f88249273}</destination>
+			<destination>{10d1195f-ec23-49e1-a900-576fca80db02}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{80db33bc-27d1-4132-bbda-11d45b3c8e83}" />
@@ -226,6 +251,17 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{f189fd59-94a6-4912-9d48-0e7f88249273}" />
+	<object class="ObjectSpatialiserEffect" id="{10d1195f-ec23-49e1-a900-576fca80db02}">
+		<property name="extentMode">
+			<value>1</value>
+		</property>
+		<property name="soundSize">
+			<value>5</value>
+		</property>
+		<property name="minimumExtent">
+			<value>45</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{975d2c54-a3aa-4341-aa54-966a1340f63a}" />
 	<object class="AutomationPoint" id="{39a3227c-4712-4449-851d-459d98bb0191}">
 		<property name="position">
