@@ -128,7 +128,7 @@ MonoBehaviour:
   OnPower:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 201412972057518515}
+      - m_Target: {fileID: 3032871505036988833}
         m_TargetAssemblyTypeName: Calculator`2[[System.Single, mscorlib
         m_MethodName: DoCalculation
         m_Mode: 0
@@ -161,7 +161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7070243963692639869}
-  - component: {fileID: 201412972057518515}
+  - component: {fileID: 3032871505036988833}
   - component: {fileID: 2856362389952714351}
   m_Layer: 8
   m_Name: Size
@@ -185,7 +185,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7298950077911773285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &201412972057518515
+--- !u!114 &3032871505036988833
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2913856521433529058}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67712958eef48fe46a6d11a03e3bf150, type: 3}
+  m_Script: {fileID: 11500000, guid: 7aafe617b6639264e9af12e77a6f95d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   OnOutput:
@@ -212,8 +212,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  Base: -0.63
-  Coefficient: 0.73
+  Curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 1
+      value: 0.1
+      inSlope: 0.725
+      outSlope: 0.725
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 5
+      value: 3
+      inSlope: 0.725
+      outSlope: 0.725
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &2856362389952714351
 MonoBehaviour:
   m_ObjectHideFlags: 0
