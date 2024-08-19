@@ -176,7 +176,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 40
+  field of view: 60
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
@@ -543,6 +543,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wave Spawner Truck
       objectReference: {fileID: 0}
+    - target: {fileID: 4303246022379575588, guid: 687ebf28195c7394981632b71e5b85e1,
+        type: 3}
+      propertyPath: Origin
+      value: 
+      objectReference: {fileID: 435522272}
     - target: {fileID: 7176678844595314669, guid: 687ebf28195c7394981632b71e5b85e1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -593,6 +598,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7403370148129749007, guid: 687ebf28195c7394981632b71e5b85e1,
+        type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 435522272}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
