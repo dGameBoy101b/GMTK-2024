@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6953772e2fdf484786901b64046038f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 10
+  MaxHealth: 1
   OnIncrease:
     m_PersistentCalls:
       m_Calls: []
@@ -172,7 +172,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _currentHealth: 10
+  _currentHealth: 1
 --- !u!1 &5297731487232700916
 GameObject:
   m_ObjectHideFlags: 0
