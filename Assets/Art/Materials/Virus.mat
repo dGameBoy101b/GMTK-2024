@@ -56,22 +56,25 @@ Material:
     m_Ints: []
     m_Floats:
     - _GameTime: 0
-    - _Metallic: 0
+    - _InnerGlowSpeed: 0.32
+    - _Metallic: 0.4
     - _NoiseOffset: 0.05
     - _NoiseScale: 1.17
     - _NoiseSpeed: 0.17
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _Smoothness: 0.21
     - _Time: 0
     - _UVNoiseOffset: 5.55
     - _UVNoiseScale: 1.13
     - _UVNoiseSpeed: 0.1
-    - _VelosityWarpStrength: 100
+    - _VelosityWarpStrength: 0
     - _WorldNoiseOffset: 0.52
     - _WorldNoiseScale: 0.37
     m_Colors:
     - _Color: {r: 0.19999997, g: 0.75673544, b: 0.8980392, a: 0}
-    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissiveColor: {r: 2, g: 0, b: 0, a: 0}
+    - _InnerGlowColor: {r: 0.76729536, g: 0, b: 0, a: 0}
     - _Velocity: {r: 0, g: 0, b: 0, a: 0}
     - _VelocityWarp: {r: 0, g: 0, b: 0, a: 0}
     - _WorldPosition: {r: 0, g: 0, b: 0, a: 0}
