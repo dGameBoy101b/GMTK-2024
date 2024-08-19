@@ -1,9 +1,13 @@
 using UnityEngine;
 using UnityEngine.Events;
+using WinterwireGames.PhysicsHelpers;
 
 public class MeleeAttack : MonoBehaviour
 {
-	[Tooltip("The gameobject to instantiate")]
+	[Tooltip("The mask used to determine if this should attack when colliding with something")]
+	public LayerMask StrikeMask;
+
+	[Tooltip("The gameobject to instantiate when striking")]
 	public GameObject Hit;
 
 	[SerializeField]
@@ -52,7 +56,7 @@ public class MeleeAttack : MonoBehaviour
 
 	public void Strike(Collision2D collision)
 	{
-		if (this.IsCooling)
+		if (this.IsCooling || !this.StrikeMask.HasLayer(collision.gameObject.layer))
 			return;
 		var point = collision.GetContact(0).point;
 		Vector3 position = new(point.x, point.y, this.transform.position.z);
