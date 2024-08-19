@@ -9,6 +9,9 @@ public class Health : MonoBehaviour
 	[Tooltip("Invoked when health increases.\nParameter is current health")]
 	public UnityEvent<float> OnIncrease = new();
 
+	[Tooltip("Invoked when this increases to max health")]
+	public UnityEvent OnFull = new();
+
 	[Tooltip("Invoked when health decreases.\nParameter is current health")]
 	public UnityEvent<float> OnDecrease = new();
 
@@ -32,6 +35,8 @@ public class Health : MonoBehaviour
 				this.OnDecrease.Invoke(value);
 			if (old > 0 && value == 0)
 				this.OnEmpty.Invoke();
+			if (old < this.MaxHealth && value == this.MaxHealth)
+				this.OnFull.Invoke();
 		}
 	}
 
