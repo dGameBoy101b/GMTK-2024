@@ -176,7 +176,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 60
+  field of view: 40
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
@@ -798,10 +798,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6763642496004059899, guid: 91da1e3d27a14364baa087729164e159,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763642496004059899, guid: 91da1e3d27a14364baa087729164e159,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763642496004059899, guid: 91da1e3d27a14364baa087729164e159,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].inSlope
+      value: -2.3415577
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763642496004059899, guid: 91da1e3d27a14364baa087729164e159,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].inWeight
+      value: 0.058276713
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763642496004059899, guid: 91da1e3d27a14364baa087729164e159,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].outSlope
+      value: -2.3415577
+      objectReference: {fileID: 0}
     - target: {fileID: 7346787893036838817, guid: 91da1e3d27a14364baa087729164e159,
         type: 3}
-      propertyPath: m_Lens.FieldOfView
-      value: 60
+      propertyPath: m_StandbyUpdate
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7366506567387085760, guid: 91da1e3d27a14364baa087729164e159,
         type: 3}
