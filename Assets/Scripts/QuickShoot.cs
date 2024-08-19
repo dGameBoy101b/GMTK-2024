@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class QuickShoot : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class QuickShoot : MonoBehaviour
 	[Tooltip("Whether this is currently shooting")]
 	public bool IsShooting = false;
 
+	[Tooltip("Invoked when this shoots a shot")]
+	public UnityEvent OnShot = new();
+
 	public void TryShot()
 	{
 		if (!this.IsShooting || this.Shoot.IsCooling)
@@ -21,6 +25,7 @@ public class QuickShoot : MonoBehaviour
 		this.Shoot.Power = this.Power;
 		this.Shoot.MaxCooldown = this.Cooldown;
 		this.Shoot.Shot();
+		this.OnShot.Invoke();
 	}
 
 	public void Update()
