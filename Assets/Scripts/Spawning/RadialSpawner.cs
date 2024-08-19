@@ -1,23 +1,24 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class FoodSpawner : MonoBehaviour
+public class RadialSpawner : MonoBehaviour
 {
-	#region Food
-	[Tooltip("The food objects to randomly spawn")]
-	public List<Food> Foods = new();
+	#region Spawnable
+	[Tooltip("The instances to randomly spawn")]
+	public List<Spawnable> Spawnables = new();
 
-	public Food PickFood()
+	public Spawnable PickSpawnable()
 	{
-		if (Foods.Count < 1)
+		if (Spawnables.Count < 1)
 			return null;
-		int index = Random.Range(0, this.Foods.Count - 1);
-		return this.Foods[index];
+		int index = Random.Range(0, this.Spawnables.Count - 1);
+		return this.Spawnables[index];
 	}
 
 	[SerializeField]
-	[Tooltip("The maximum number of food allowed to exist")]
+	[Tooltip("The maximum number of instances allowed to exist")]
 	[Min(0)]
 	private int _maxCount = 10;
 	public int MaxCount
@@ -26,7 +27,7 @@ public class FoodSpawner : MonoBehaviour
 		set => this._maxCount = Mathf.Max(0, value);
 	}
 
-	[Tooltip("Whether old food should be destroyed to make room for new food")]
+	[Tooltip("Whether old instances should be destroyed to make room for new instances")]
 	public bool ShouldDestroyOld = false;
 
 	public int CurrentCount => this.transform.childCount;
@@ -37,7 +38,7 @@ public class FoodSpawner : MonoBehaviour
 
 	public Vector3? LastDestroyPosition { get; private set; } = null;
 
-	public void DestoryOldFood()
+	public void DestoryOldSpawnable()
 	{
 		if (!this.NeedToDestroyOld)
 		{
@@ -61,7 +62,7 @@ public class FoodSpawner : MonoBehaviour
 
 	#region Delay
 	[SerializeField]
-	[Tooltip("The minimum duration between spawning each piece of food")]
+	[Tooltip("The minimum duration between spawning each instance")]
 	[Min(0)]
 	private float _minDelay = .1f;
 	public float MinDelay
@@ -89,11 +90,11 @@ public class FoodSpawner : MonoBehaviour
 	#endregion
 
 	#region Position
-	[Tooltip("The object around which to spawn food")]
+	[Tooltip("The object around which to spawn instances")]
 	public Transform Origin;
 
 	[SerializeField]
-	[Tooltip("The minimum distance food is spawned from the origin")]
+	[Tooltip("The minimum distance instances are spawned from the origin")]
 	[Min(0)]
 	private float _minRadius = 5;
 	public float MinRadius
@@ -103,7 +104,7 @@ public class FoodSpawner : MonoBehaviour
 	}
 
 	[SerializeField]
-	[Tooltip("The maximum distance food is spawned from the origin")]
+	[Tooltip("The maximum distance instances are spawned from the origin")]
 	[Min(0)]
 	private float _maxRadius = 10f;
 	public float MaxRadius
@@ -132,23 +133,24 @@ public class FoodSpawner : MonoBehaviour
 	#endregion
 
 	#region Spawning
-	[Tooltip("Invoked when this spawns food.\nParameter is the spawned food")]
-	public UnityEvent<Food> OnSpawn = new();
+	[Tooltip("Invoked when this spawns an instance.\nParameter is the spawned instance")]
+	public UnityEvent<Spawnable> OnSpawn = new();
 
 	public Vector3? LastSpawnPosition { get; private set; } = null;
 
-	public void SpawnFood()
+	public void SpawnSpawnable()
 	{
 		if (!this.IsDelayReady || !this.IsCountReady)
 			return;
 		this.RemainingDelay = this.MinDelay;
-		this.DestoryOldFood();
-		var original_food = this.PickFood();
+		this.DestoryOldSpawnable();
+		var original_instance = this.PickSpawnable();
 		var position = this.PickPosition();
-		var food_object = Instantiate(original_food.gameObject, position, Quaternion.identity, this.transform);
-		var food = food_object.GetComponent<Food>();
+		var instance_object = Instantiate(original_instance.gameObject, position, Quaternion.identity, this.transform);
+		var instance = instance_object.GetComponent<Spawnable>();
 		this.LastSpawnPosition = position;
-		this.OnSpawn.Invoke(food);
+		instance.OnSpawn.Invoke(this);
+		this.OnSpawn.Invoke(instance);
 	}
 
 	public void DrawSpawnGizmo()
@@ -164,7 +166,7 @@ public class FoodSpawner : MonoBehaviour
 	private void Update()
 	{
 		this.UpdateDelay(Time.deltaTime);
-		this.SpawnFood();
+		this.SpawnSpawnable();
 	}
 
 	private void OnDrawGizmosSelected()
