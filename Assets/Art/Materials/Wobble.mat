@@ -55,9 +55,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Intensity: 0.5
-    - _MaxRotation: 0.15
-    - _MaxSpeed: 50
+    - _Intensity: 1
+    - _MaxRotation: 0.1
+    - _MaxSpeed: 60
     m_Colors:
     - _Color: {r: 0.16045865, g: 0.8616352, b: 0.14902475, a: 0}
   m_BuildTextureStacks: []
