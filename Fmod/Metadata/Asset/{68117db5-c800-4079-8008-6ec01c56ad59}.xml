@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{68117db5-c800-4079-8008-6ec01c56ad59}">
+		<property name="assetPath">
+			<value>SFX/Player/Slime Shot/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d62e51ab-a92d-4030-a9e1-2904bb2cf8ad}</destination>
+		</relationship>
+	</object>
+</objects>
