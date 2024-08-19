@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4644730442163427500}
   - component: {fileID: 5403656193055242855}
   - component: {fileID: 316628025443655040}
+  - component: {fileID: 7679924395328298623}
   m_Layer: 0
   m_Name: Power Arrow
   m_TagString: Untagged
@@ -60,15 +61,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.6650944, g: 1, b: 0.97635967, a: 1}
+  m_Material: {fileID: 2100000, guid: b61c86a4a7393d143916bcd22c1c58a0, type: 2}
+  m_Color: {r: 0, g: 0.7660377, b: 0.1411913, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9c7925da369f2e746b9e023ed4c4c16d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 84eaf3ee2a04b2f41998648396d9a866, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -105,6 +106,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7679924395328298623}
+        m_TargetAssemblyTypeName: WinterwireGames.MaterialParameters.FloatMaterialParameter,
+          Assembly-CSharp
+        m_MethodName: set_MaterialValue
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _denominator: 5
 --- !u!114 &316628025443655040
 MonoBehaviour:
@@ -120,6 +134,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transform: {fileID: 7933970028382581338}
   _target: {fileID: 0}
+--- !u!114 &7679924395328298623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5974443630200474128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1f4db994cd9e1e4bbf6021dc561ad56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Material: {fileID: 2100000, guid: b61c86a4a7393d143916bcd22c1c58a0, type: 2}
+  ParameterName: _Intensity
+  Mode: 2
+  Value: 0
 --- !u!1 &6488690362680203380
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,7 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: b61c86a4a7393d143916bcd22c1c58a0, type: 2}
   m_Color: {r: 0, g: 1, b: 0.88871, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -185,7 +215,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9c7925da369f2e746b9e023ed4c4c16d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 84eaf3ee2a04b2f41998648396d9a866, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
