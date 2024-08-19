@@ -342,6 +342,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ca23a82b4ab22343bc091ca13aebf66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StrikeMask:
+    serializedVersion: 2
+    m_Bits: 8
   Hit: {fileID: 5099375449361996900, guid: 3195577a69e09644da52e1605b65fda2, type: 3}
   _maxCooldown: 1
   _cooldownRate: 1
