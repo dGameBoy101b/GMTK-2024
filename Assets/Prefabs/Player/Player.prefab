@@ -752,6 +752,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5840559901066359671}
   - component: {fileID: 5876617856893727584}
+  - component: {fileID: 58722934214279962}
   m_Layer: 3
   m_Name: Health
   m_TagString: Untagged
@@ -804,6 +805,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnFull:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 58722934214279962}
+        m_TargetAssemblyTypeName: EndConditions, Assembly-CSharp
+        m_MethodName: Win
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnDecrease:
     m_PersistentCalls:
       m_Calls:
@@ -821,8 +837,38 @@ MonoBehaviour:
         m_CallState: 2
   OnEmpty:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 58722934214279962}
+        m_TargetAssemblyTypeName: EndConditions, Assembly-CSharp
+        m_MethodName: Lose
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _currentHealth: 50
+--- !u!114 &58722934214279962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4508092270997494756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3831246be3bbc849b246d6797427109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnWin:
+    m_PersistentCalls:
+      m_Calls: []
+  OnLose:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5012996084810698424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1632,6 +1678,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1788021902981257910, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 31.2
       objectReference: {fileID: 0}
     - target: {fileID: 2671677587006358376, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
         type: 3}
