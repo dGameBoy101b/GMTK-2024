@@ -384,58 +384,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3780722112029878961, guid: 93c818fff8319eb4aaa8948a6f221802,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3769709631256288008}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93c818fff8319eb4aaa8948a6f221802, type: 3}
---- !u!1 &2370614798709413570 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3780722112029878961, guid: 93c818fff8319eb4aaa8948a6f221802,
-    type: 3}
-  m_PrefabInstance: {fileID: 1482193504336264307}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3769709631256288008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2370614798709413570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06e50a3db13aee94ea15876af8ff13f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnOutput:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3808210677407781076}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
-        m_MethodName: set_fillAmount
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _denominator: 0
---- !u!114 &3808210677407781076 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2326307448511999143, guid: 93c818fff8319eb4aaa8948a6f221802,
-    type: 3}
-  m_PrefabInstance: {fileID: 1482193504336264307}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbb538f4daa53a6469a364fb98aa6334, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &8049417476944372841 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8873368552960006170, guid: 93c818fff8319eb4aaa8948a6f221802,
