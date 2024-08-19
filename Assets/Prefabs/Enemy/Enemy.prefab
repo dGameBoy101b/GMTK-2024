@@ -124,9 +124,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8297050495991601405}
+  - component: {fileID: 3174941546507629517}
+  - component: {fileID: 5515332294840054114}
+  - component: {fileID: 3380342010845800735}
+  - component: {fileID: 2951495992191677308}
   - component: {fileID: 755857028022837468}
   - component: {fileID: 246965778257780657}
-  - component: {fileID: 2951495992191677308}
   - component: {fileID: 7644108742869406846}
   - component: {fileID: 8742756210544677501}
   m_Layer: 9
@@ -155,6 +158,100 @@ Transform:
   - {fileID: 9057392984501475277}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3174941546507629517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5297731487232700916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde7801c306ba374ba06ddf6ea0eb802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnSpawn:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5515332294840054114}
+        m_TargetAssemblyTypeName: ComponentFinder`1[[Enemy, Assembly-CSharp
+        m_MethodName: FindComponent
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5515332294840054114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5297731487232700916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ce63429e31b0834aaeb255a1fd6bfc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnFind:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3380342010845800735}
+        m_TargetAssemblyTypeName: EnemyTarget, Assembly-CSharp
+        m_MethodName: GetTarget
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3380342010845800735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5297731487232700916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2db32ebc0fe71b4bb63a697201dedfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnTarget:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2951495992191677308}
+        m_TargetAssemblyTypeName: Enemy, Assembly-CSharp
+        m_MethodName: set_Target
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2951495992191677308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5297731487232700916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbab1d7bb1e9c97499c1e1e3f4b9fd74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _target: {fileID: 0}
 --- !u!50 &755857028022837468
 Rigidbody2D:
   serializedVersion: 4
@@ -217,19 +314,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.4
---- !u!114 &2951495992191677308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5297731487232700916}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbab1d7bb1e9c97499c1e1e3f4b9fd74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Target: {fileID: 0}
 --- !u!114 &7644108742869406846
 MonoBehaviour:
   m_ObjectHideFlags: 0
