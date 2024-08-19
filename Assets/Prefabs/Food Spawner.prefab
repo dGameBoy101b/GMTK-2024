@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Spawnables:
   - {fileID: 8446792895000448247, guid: 937f8816a996ea34b9f40fde335cad31, type: 3}
-  _maxCount: 10
+  _maxCount: 30
   ShouldDestroyOld: 1
   _minDelay: 0.5
   _remainingDelay: 0
@@ -54,5 +54,8 @@ MonoBehaviour:
   _minRadius: 5
   _maxRadius: 10
   OnSpawn:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHitMaxCount:
     m_PersistentCalls:
       m_Calls: []
