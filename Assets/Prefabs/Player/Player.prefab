@@ -7307,10 +7307,10 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1357479376
-      Data2: 1122911816
-      Data3: 579729841
-      Data4: 1888335146
+      Data1: 292175417
+      Data2: 1157058132
+      Data3: 2006290100
+      Data4: 72968385
     Path: event:/SFX/Player/Charge Shot Launch
   Event: 
   PlayEvent: 0
