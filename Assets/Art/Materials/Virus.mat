@@ -68,7 +68,7 @@ Material:
     - _UVNoiseOffset: 5.55
     - _UVNoiseScale: 1.13
     - _UVNoiseSpeed: 0.1
-    - _VelosityWarpStrength: 100
+    - _VelosityWarpStrength: 0
     - _WorldNoiseOffset: 0.52
     - _WorldNoiseScale: 0.37
     m_Colors:
