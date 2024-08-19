@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Serialization;
 
 public class Move : MonoBehaviour
@@ -31,8 +32,17 @@ public class Move : MonoBehaviour
 	public Vector2 CurrentDirection
 	{
 		get => this._currentDirection;
-		set => this._currentDirection = value;
+		set 
+		{
+			var old = this._currentDirection;
+			this._currentDirection = value;
+			if (old != value)
+				this.OnDirectionChange.Invoke(value);
+		}
 	}
+
+	[Tooltip("Invoked when the current direction is set")]
+	public UnityEvent<Vector2> OnDirectionChange = new();
 
 	private void FixedUpdate()
 	{
