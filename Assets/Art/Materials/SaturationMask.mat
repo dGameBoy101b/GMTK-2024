@@ -38,7 +38,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Hardness: 0.8
-    - _Radius: 0.3
+    - _Hardness: 0.75
+    - _Radius: 0.1
+    - _X_Multiplier: 1.6
+    - _Y_Multiplier: 1
     m_Colors: []
   m_BuildTextureStacks: []
