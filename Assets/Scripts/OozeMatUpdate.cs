@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VelocityWarp : MonoBehaviour
+public class OozeMatUpdate : MonoBehaviour
 {
     private Material mat;
     private Vector3 previousPosition;
