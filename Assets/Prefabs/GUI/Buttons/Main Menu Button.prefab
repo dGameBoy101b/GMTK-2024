@@ -18,6 +18,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3503783957665817551, guid: 6426bb1a0b9b6454a961e51520ab837c,
+        type: 3}
+      propertyPath: ScenePath
+      value: 0 - Main Menu
+      objectReference: {fileID: 0}
     - target: {fileID: 5360995320867230468, guid: 6426bb1a0b9b6454a961e51520ab837c,
         type: 3}
       propertyPath: m_Name
