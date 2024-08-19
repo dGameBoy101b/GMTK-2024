@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Trail
+  m_Name: BulletTrail
   m_Shader: {fileID: -6465566751694194690, guid: fa5a2c7eca5475d4c89b13bc73c06cea,
     type: 3}
   m_Parent: {fileID: 0}
@@ -113,6 +113,7 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
+    - _NoiseOffset: 10
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
@@ -128,9 +129,9 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 0.11160554, g: 0.20754719, b: 0.13418004, a: 1}
-    - _Color: {r: 0.27981767, g: 0.59748423, b: 0.21231353, a: 0}
+    - _Color: {r: 0.094911344, g: 0.52201253, b: 0, a: 0}
     - _EmissionColor: {r: 0.14912377, g: 0.72955966, b: 0.19302225, a: 1}
-    - _EmissiveColor: {r: 0.30980393, g: 0.92156863, b: 0.56078434, a: 0}
-    - _InnerColor: {r: 2.433572, g: 0.43228066, b: 0.19131804, a: 0}
+    - _EmissiveColor: {r: 0.034571372, g: 0.47798735, b: 0.21009026, a: 0}
+    - _InnerColor: {r: 1.4980391, g: 0.39607385, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
