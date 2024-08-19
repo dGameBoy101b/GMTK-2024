@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -16,7 +15,9 @@ public class RadialSpawner : MonoBehaviour
 		int index = Random.Range(0, this.Spawnables.Count - 1);
 		return this.Spawnables[index];
 	}
+	#endregion
 
+	#region Count
 	[SerializeField]
 	[Tooltip("The maximum number of instances allowed to exist")]
 	[Min(0)]
@@ -27,12 +28,14 @@ public class RadialSpawner : MonoBehaviour
 		set => this._maxCount = Mathf.Max(0, value);
 	}
 
-	[Tooltip("Whether old instances should be destroyed to make room for new instances")]
-	public bool ShouldDestroyOld = false;
-
 	public int CurrentCount => this.transform.childCount;
 
 	public bool IsCountReady => this.ShouldDestroyOld || this.CurrentCount < this.MaxCount;
+	#endregion
+
+	#region Destruction
+	[Tooltip("Whether old instances should be destroyed to make room for new instances")]
+	public bool ShouldDestroyOld = false;
 
 	public bool NeedToDestroyOld => this.ShouldDestroyOld && this.CurrentCount >= this.MaxCount;
 
@@ -136,9 +139,12 @@ public class RadialSpawner : MonoBehaviour
 	[Tooltip("Invoked when this spawns an instance.\nParameter is the spawned instance")]
 	public UnityEvent<Spawnable> OnSpawn = new();
 
+	[Tooltip("Invoked when spawning the last instance")]
+	public UnityEvent OnHitMaxCount = new();
+
 	public Vector3? LastSpawnPosition { get; private set; } = null;
 
-	public void SpawnSpawnable()
+	public void Spawn()
 	{
 		if (!this.IsDelayReady || !this.IsCountReady)
 			return;
@@ -151,6 +157,8 @@ public class RadialSpawner : MonoBehaviour
 		this.LastSpawnPosition = position;
 		instance.OnSpawn.Invoke(this);
 		this.OnSpawn.Invoke(instance);
+		if (this.CurrentCount >= this.MaxCount)
+			this.OnHitMaxCount.Invoke();
 	}
 
 	public void DrawSpawnGizmo()
@@ -166,7 +174,7 @@ public class RadialSpawner : MonoBehaviour
 	private void Update()
 	{
 		this.UpdateDelay(Time.deltaTime);
-		this.SpawnSpawnable();
+		this.Spawn();
 	}
 
 	private void OnDrawGizmosSelected()
