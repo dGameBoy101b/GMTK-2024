@@ -7651,7 +7651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Aim: {fileID: 488656889014738013}
-  Radius: 1
+  Radius: 3
   _camera: {fileID: 0}
   IsPointer: 1
   PointerScreenPosition: {x: 0, y: 0}
