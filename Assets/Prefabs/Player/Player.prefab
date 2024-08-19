@@ -612,7 +612,7 @@ MonoBehaviour:
   OnStartCharge:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6532391303130942015}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -636,10 +636,22 @@ MonoBehaviour:
           m_StringArgument: Charge
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 4920893782242014983}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   OnChargeUp:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3399344672037189965}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Bar, Assembly-CSharp
         m_MethodName: UpdateValue
         m_Mode: 1
@@ -664,13 +676,25 @@ MonoBehaviour:
           m_StringArgument: Charged
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 6655861395552388976}
+        m_TargetAssemblyTypeName: Calculator`2[[System.Single, mscorlib
+        m_MethodName: DoCalculation
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   BaseCooldown: 1
   PowerCooldownCoefficient: 0.2
   LastCooldown: 0
   OnCooldown:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3399344672037189965}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Bar, Assembly-CSharp
         m_MethodName: UpdateValue
         m_Mode: 1
@@ -698,7 +722,7 @@ MonoBehaviour:
   OnCooldownEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6532391303130942015}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -6445,6 +6469,18 @@ MonoBehaviour:
           m_StringArgument: Fire
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4920893782242014983}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   MaxCooldown: 1
   _remainingCooldown: 0
   OnCooldown:
@@ -7335,11 +7371,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2489924788044087858, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
-        type: 3}
-      propertyPath: Target
-      value: 
-      objectReference: {fileID: 7609414158728488129}
     - target: {fileID: 3983738001850807584, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
         type: 3}
       propertyPath: Shoot
@@ -7350,11 +7381,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HUD
       objectReference: {fileID: 0}
-    - target: {fileID: 7783425059153494501, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
-        type: 3}
-      propertyPath: ChargeShoot
-      value: 
-      objectReference: {fileID: 2624582226010691701}
     - target: {fileID: 8214744696997888673, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
         type: 3}
       propertyPath: Aim
@@ -7365,30 +7391,30 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d00b21b96d4414ebef43cdc7c1f3d3, type: 3}
---- !u!114 &3399344672037189965 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7783425059153494501, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
+--- !u!1 &4920893782242014983 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 532028383830593455, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
     type: 3}
   m_PrefabInstance: {fileID: 4839296116574091432}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6532391303130942015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f416e1202abc0c4b90e80503a34e747, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &5040471512756768169 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 494261327519593729, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
     type: 3}
   m_PrefabInstance: {fileID: 4839296116574091432}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6532391303130942015 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1841714317958574743, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
+--- !u!114 &6655861395552388976 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2267277095211220952, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
     type: 3}
   m_PrefabInstance: {fileID: 4839296116574091432}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4920893782242014983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06e50a3db13aee94ea15876af8ff13f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8386184877058936200 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3983738001850807584, guid: 83d00b21b96d4414ebef43cdc7c1f3d3,
