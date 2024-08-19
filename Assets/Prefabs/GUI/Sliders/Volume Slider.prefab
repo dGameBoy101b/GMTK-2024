@@ -296,6 +296,7 @@ GameObject:
   - component: {fileID: 6825314335248969662}
   - component: {fileID: 989252679583913253}
   - component: {fileID: 148579488642161441}
+  - component: {fileID: 3490630413238976310}
   m_Layer: 0
   m_Name: Slider
   m_TagString: Untagged
@@ -445,6 +446,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4448439118546173895}
+        m_TargetAssemblyTypeName: WinterwireGames.FMODParameters.FMODParameter`2[[System.Single,
+          mscorlib
+        m_MethodName: set_Value
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &989252679583913253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -474,6 +488,63 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _shouldSaveOnDestroy: 1
   _shouldSaveOnDisable: 1
+--- !u!114 &3490630413238976310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5047632059421763984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 9
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 162869399111736411}
+          m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2035270816906369155}
+          m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 10
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2035270816906369155}
+          m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+          m_MethodName: Stop
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &5089956236784946373
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,6 +653,7 @@ RectTransform:
   - {fileID: 6893163963098809383}
   - {fileID: 9199686829152796144}
   - {fileID: 2968059515037665949}
+  - {fileID: 4055056364192621205}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -777,3 +849,126 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1001 &4693028804333309211
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3615685276895302481}
+    m_Modifications:
+    - target: {fileID: 1698138972395231459, guid: 7501dfff0ffcc4c4aa6a1df6597eb688,
+        type: 3}
+      propertyPath: m_Name
+      value: Slider Sounds
+      objectReference: {fileID: 0}
+    - target: {fileID: 6709871771918194072, guid: 7501dfff0ffcc4c4aa6a1df6597eb688,
+        type: 3}
+      propertyPath: EventReference.Path
+      value: event:/SFX/UI/Volume Fader Adjusted
+      objectReference: {fileID: 0}
+    - target: {fileID: 6709871771918194072, guid: 7501dfff0ffcc4c4aa6a1df6597eb688,
+        type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -336092334
+      objectReference: {fileID: 0}
+    - target: {fileID: 6709871771918194072, guid: 7501dfff0ffcc4c4aa6a1df6597eb688,
+        type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1080343191
+      objectReference: {fileID: 0}
+    - target: {fileID: 6709871771918194072, guid: 7501dfff0ffcc4c4aa6a1df6597eb688,
+        type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: 230138521
+      objectReference: {fileID: 0}
+    - target: {fileID: 6709871771918194072, guid: 7501dfff0ffcc4c4aa6a1df6597eb688,
+        type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: 1064029856
+      objectReference: {fileID: 0}
+    - target: {fileID: 8747829488489197454, guid: 7501dfff0ffcc4c4aa6a1df6597eb688,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8747829488489197454, guid: 7501dfff0ffcc4c4aa6a1df6597eb688,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8747829488489197454, guid: 7501dfff0ffcc4c4aa6a1df6597eb688,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8747829488489197454, guid: 7501dfff0ffcc4c4aa6a1df6597eb688,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8747829488489197454, guid: 7501dfff0ffcc4c4aa6a1df6597eb688,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8747829488489197454, guid: 7501dfff0ffcc4c4aa6a1df6597eb688,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8747829488489197454, guid: 7501dfff0ffcc4c4aa6a1df6597eb688,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8747829488489197454, guid: 7501dfff0ffcc4c4aa6a1df6597eb688,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8747829488489197454, guid: 7501dfff0ffcc4c4aa6a1df6597eb688,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8747829488489197454, guid: 7501dfff0ffcc4c4aa6a1df6597eb688,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7501dfff0ffcc4c4aa6a1df6597eb688, type: 3}
+--- !u!114 &162869399111736411 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4855544564332663104, guid: 7501dfff0ffcc4c4aa6a1df6597eb688,
+    type: 3}
+  m_PrefabInstance: {fileID: 4693028804333309211}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2035270816906369155 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6709871771918194072, guid: 7501dfff0ffcc4c4aa6a1df6597eb688,
+    type: 3}
+  m_PrefabInstance: {fileID: 4693028804333309211}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &4055056364192621205 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8747829488489197454, guid: 7501dfff0ffcc4c4aa6a1df6597eb688,
+    type: 3}
+  m_PrefabInstance: {fileID: 4693028804333309211}
+  m_PrefabAsset: {fileID: 0}

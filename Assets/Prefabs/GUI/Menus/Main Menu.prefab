@@ -1019,6 +1019,61 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5780052517385493479}
     m_Modifications:
+    - target: {fileID: 589259070658895349, guid: 38d496b6c1322cd44b2e4ab95af6d689,
+        type: 3}
+      propertyPath: _onAwake.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 589259070658895349, guid: 38d496b6c1322cd44b2e4ab95af6d689,
+        type: 3}
+      propertyPath: _onAwake.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 589259070658895349, guid: 38d496b6c1322cd44b2e4ab95af6d689,
+        type: 3}
+      propertyPath: _onAwake.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6464050439022356383}
+    - target: {fileID: 589259070658895349, guid: 38d496b6c1322cd44b2e4ab95af6d689,
+        type: 3}
+      propertyPath: _onAwake.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6464050439022356383}
+    - target: {fileID: 589259070658895349, guid: 38d496b6c1322cd44b2e4ab95af6d689,
+        type: 3}
+      propertyPath: _onAwake.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 589259070658895349, guid: 38d496b6c1322cd44b2e4ab95af6d689,
+        type: 3}
+      propertyPath: _onAwake.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 589259070658895349, guid: 38d496b6c1322cd44b2e4ab95af6d689,
+        type: 3}
+      propertyPath: _onAwake.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 589259070658895349, guid: 38d496b6c1322cd44b2e4ab95af6d689,
+        type: 3}
+      propertyPath: _onAwake.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 589259070658895349, guid: 38d496b6c1322cd44b2e4ab95af6d689,
+        type: 3}
+      propertyPath: _onAwake.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 589259070658895349, guid: 38d496b6c1322cd44b2e4ab95af6d689,
+        type: 3}
+      propertyPath: _onAwake.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 589259070658895349, guid: 38d496b6c1322cd44b2e4ab95af6d689,
+        type: 3}
+      propertyPath: _onAwake.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1260037322791630634, guid: 38d496b6c1322cd44b2e4ab95af6d689,
         type: 3}
       propertyPath: m_Pivot.x

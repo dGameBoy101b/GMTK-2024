@@ -8,6 +8,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 989252679583913253, guid: fcf84245df06d25489c37bd6a595b8cb,
+        type: 3}
+      propertyPath: OptionName
+      value: SFX Volume Slider
+      objectReference: {fileID: 0}
     - target: {fileID: 2427362488650349797, guid: fcf84245df06d25489c37bd6a595b8cb,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -118,6 +123,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4448439118546173895, guid: fcf84245df06d25489c37bd6a595b8cb,
+        type: 3}
+      propertyPath: _parameterName
+      value: SFX Volume
+      objectReference: {fileID: 0}
     - target: {fileID: 5229129946304793266, guid: fcf84245df06d25489c37bd6a595b8cb,
         type: 3}
       propertyPath: m_Sprite
@@ -138,6 +148,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825314335248969662, guid: fcf84245df06d25489c37bd6a595b8cb,
+        type: 3}
+      propertyPath: OptionName
+      value: SFX Volume Slider
       objectReference: {fileID: 0}
     - target: {fileID: 8275688381368783070, guid: fcf84245df06d25489c37bd6a595b8cb,
         type: 3}
