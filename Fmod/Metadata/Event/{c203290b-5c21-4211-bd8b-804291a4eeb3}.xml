@@ -190,6 +190,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{ec546b50-3469-413d-bcc3-f37db529d388}">
+		<property name="volume">
+			<value>-14.5</value>
+		</property>
 		<property name="name">
 			<value>move</value>
 		</property>
@@ -222,7 +225,7 @@
 	</object>
 	<object class="TempoMarker" id="{70eb9b0e-7aa3-4f39-88d5-6a85f80d2b0b}">
 		<property name="position">
-			<value>0.125</value>
+			<value>0</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{8ed7874e-0b19-4b61-b21f-6c63980dc3fd}</destination>
@@ -250,7 +253,7 @@
 			<value>0</value>
 		</property>
 		<property name="length">
-			<value>11.5</value>
+			<value>11.5625</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{8ed7874e-0b19-4b61-b21f-6c63980dc3fd}</destination>
@@ -451,7 +454,7 @@
 	<object class="MixerBusFader" id="{2a8c30cf-dd46-4863-b31e-0eb4d15ab5a7}" />
 	<object class="AutomationPoint" id="{68700a27-8547-4cd1-b85b-c17186aa5e76}">
 		<property name="position">
-			<value>0.125</value>
+			<value>0.0625</value>
 		</property>
 		<property name="value">
 			<value>0</value>
@@ -470,7 +473,7 @@
 	</object>
 	<object class="AutomationPoint" id="{31c8bc1d-86af-4cea-ba53-6cffaee4b141}">
 		<property name="position">
-			<value>11.5</value>
+			<value>11.5625</value>
 		</property>
 		<property name="value">
 			<value>0</value>
