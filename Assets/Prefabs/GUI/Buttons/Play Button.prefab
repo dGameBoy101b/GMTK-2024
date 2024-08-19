@@ -53,6 +53,12 @@ PrefabInstance:
       propertyPath: m_text
       value: PLAY
       objectReference: {fileID: 0}
+    - target: {fileID: 8342870768649883219, guid: 7b202817fb4c0e24f98c243daf9323ab,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fce3b57007743c549843125a0c8694e9,
+        type: 3}
     - target: {fileID: 9082225470793534697, guid: 7b202817fb4c0e24f98c243daf9323ab,
         type: 3}
       propertyPath: m_Pivot.x
@@ -411,7 +417,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 4233742655618909154}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3010281715157881944}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3348e8f58189de940973c0e8c4dbf3b6, type: 3}
   m_Name: 
