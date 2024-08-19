@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2225015219482036240}
-  - component: {fileID: 1901149162844531091}
+  - component: {fileID: 867429463298522179}
   m_Layer: 0
   m_Name: Food Spawner
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1901149162844531091
+--- !u!114 &867429463298522179
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,11 +41,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8632136455663737474}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba9789306bb638d4bbb640059664054f, type: 3}
+  m_Script: {fileID: 11500000, guid: ff920ce6c8d4bca40b6c2b78a7bf02a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Foods:
-  - {fileID: 6131656116958784722, guid: 937f8816a996ea34b9f40fde335cad31, type: 3}
+  Spawnables:
+  - {fileID: 8446792895000448247, guid: 937f8816a996ea34b9f40fde335cad31, type: 3}
   _maxCount: 10
   ShouldDestroyOld: 1
   _minDelay: 0.5
