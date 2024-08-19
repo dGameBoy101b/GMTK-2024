@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7885913074896890563}
   - component: {fileID: 1234177431379078817}
   - component: {fileID: 6131656116958784722}
+  - component: {fileID: 8446792895000448247}
   m_Layer: 7
   m_Name: Food
   m_TagString: Untagged
@@ -83,6 +84,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HealthValue: 1
   OnEat:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8446792895000448247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59380682094845100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde7801c306ba374ba06ddf6ea0eb802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnSpawn:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &2858870748512773398
