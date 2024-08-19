@@ -28,6 +28,9 @@
 	<object class="MixerBusEffectChain" id="{4d8d3de5-f525-47dd-a51b-44c3f0792944}">
 		<relationship name="effects">
 			<destination>{7338e5b1-9676-44d5-8016-9fd700680e45}</destination>
+			<destination>{1fcdd658-f657-4f8b-80ba-868bb2b38599}</destination>
+			<destination>{47afc194-3871-49fd-ad54-e3281878c7f0}</destination>
+			<destination>{9012ef3a-7fbb-4b24-b66a-93ba2bc6c56e}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{2142098b-3fb0-48e9-8f29-9c5bd57c35b5}" />
@@ -41,12 +44,51 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{7338e5b1-9676-44d5-8016-9fd700680e45}" />
+	<object class="MixerSend" id="{1fcdd658-f657-4f8b-80ba-868bb2b38599}">
+		<property name="level">
+			<value>0</value>
+		</property>
+		<property name="inputFormat">
+			<value>5</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{f3f6689f-ada0-4034-8c65-1ac32e675a79}</destination>
+		</relationship>
+	</object>
+	<object class="MixerSend" id="{47afc194-3871-49fd-ad54-e3281878c7f0}">
+		<property name="bypass">
+			<value>true</value>
+		</property>
+		<property name="level">
+			<value>0</value>
+		</property>
+		<property name="inputFormat">
+			<value>5</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{f55e9fc9-7ef1-4c9c-bf3e-6567478cad1b}</destination>
+		</relationship>
+	</object>
+	<object class="MixerSend" id="{9012ef3a-7fbb-4b24-b66a-93ba2bc6c56e}">
+		<property name="bypass">
+			<value>true</value>
+		</property>
+		<property name="level">
+			<value>0</value>
+		</property>
+		<property name="inputFormat">
+			<value>5</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{210116d7-eaef-479c-a8c8-015c75c5078b}</destination>
+		</relationship>
+	</object>
 	<object class="AutomationPoint" id="{91eac95a-ed64-4608-8b59-df57109d6719}">
 		<property name="position">
 			<value>100</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>-5</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{fac818d8-5e2b-4465-8298-0c03306237d4}">
