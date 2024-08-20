@@ -722,6 +722,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Menu Button
       objectReference: {fileID: 0}
+    - target: {fileID: 5053666132376588120, guid: b111e6395187ac448b05fa2d607a01c9,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5053666132376588120, guid: b111e6395187ac448b05fa2d607a01c9,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5053666132376588120, guid: b111e6395187ac448b05fa2d607a01c9,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 2458680937436873107}
+    - target: {fileID: 5053666132376588120, guid: b111e6395187ac448b05fa2d607a01c9,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5053666132376588120, guid: b111e6395187ac448b05fa2d607a01c9,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: ScreenFader, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1154,6 +1179,7 @@ GameObject:
   - component: {fileID: 8562743119115303529}
   - component: {fileID: 5025248033741516410}
   - component: {fileID: 8562743119115303530}
+  - component: {fileID: 8562743119115303531}
   m_Layer: 0
   m_Name: Game Over Menu
   m_TagString: Untagged
@@ -1988,6 +2014,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8562743119115303531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2458680937436873107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dbc5f786a9d52b4ab3563f21045712e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Animator: {fileID: 8562743119115303530}
+  ParameterName: OnScreen
 --- !u!224 &8827639925658842673
 RectTransform:
   m_ObjectHideFlags: 0
