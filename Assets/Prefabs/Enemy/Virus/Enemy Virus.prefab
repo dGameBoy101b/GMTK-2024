@@ -11,17 +11,17 @@ PrefabInstance:
     - target: {fileID: 3612949995260686391, guid: cbc40997393248f4abfbc840c148c067,
         type: 3}
       propertyPath: EventReference.Path
-      value: event:/SFX/Mob/Virus Idle
+      value: event:/SFX/Mob/Virus/Virus Idle
       objectReference: {fileID: 0}
     - target: {fileID: 3612949995260686391, guid: cbc40997393248f4abfbc840c148c067,
         type: 3}
       propertyPath: OverrideMaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3612949995260686391, guid: cbc40997393248f4abfbc840c148c067,
         type: 3}
       propertyPath: OverrideMinDistance
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3612949995260686391, guid: cbc40997393248f4abfbc840c148c067,
         type: 3}
