@@ -1153,6 +1153,7 @@ GameObject:
   - component: {fileID: 4838768137864627415}
   - component: {fileID: 8562743119115303529}
   - component: {fileID: 5025248033741516410}
+  - component: {fileID: 8562743119115303530}
   m_Layer: 0
   m_Name: Game Over Menu
   m_TagString: Untagged
@@ -1677,7 +1678,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3174748819838205038}
   - component: {fileID: 7291165131418495250}
-  - component: {fileID: 6969067844576704031}
   - component: {fileID: 7839453576700434345}
   - component: {fileID: 3845806348520232625}
   m_Layer: 0
@@ -1687,27 +1687,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &6969067844576704031
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6298491179258432065}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2b17550c590413b41af8c049f2b8af45, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7010396298499167684
 GameObject:
   m_ObjectHideFlags: 0
@@ -1974,7 +1953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dbc5f786a9d52b4ab3563f21045712e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Animator: {fileID: 6969067844576704031}
+  Animator: {fileID: 0}
   ParameterName: OnScreen
 --- !u!114 &8562743119115303529
 MonoBehaviour:
@@ -1988,6 +1967,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5aafc4f2c73dc3543bf4cab3e728953a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &8562743119115303530
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2458680937436873107}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e93d45e57d016c0408ef5a2ae309e05c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!224 &8827639925658842673
 RectTransform:
   m_ObjectHideFlags: 0
