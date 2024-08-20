@@ -505,11 +505,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1064343157
-      Data2: 1076048914
-      Data3: -1621208148
-      Data4: 791603576
-    Path: event:/SFX/Mob/Melee Attack
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   Event: 
   PlayEvent: 0
   StopEvent: 0
