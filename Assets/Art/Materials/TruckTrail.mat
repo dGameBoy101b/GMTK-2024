@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: VirusTrail
+  m_Name: TruckTrail
   m_Shader: {fileID: -6465566751694194690, guid: fa5a2c7eca5475d4c89b13bc73c06cea,
     type: 3}
   m_Parent: {fileID: 0}
@@ -129,9 +129,9 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 0.11160554, g: 0.20754719, b: 0.13418004, a: 1}
-    - _Color: {r: 0, g: 0.2, b: 0.4392157, a: 0}
+    - _Color: {r: 0.27672952, g: 0.1830721, b: 0.12618168, a: 0}
     - _EmissionColor: {r: 0.14912377, g: 0.72955966, b: 0.19302225, a: 1}
-    - _EmissiveColor: {r: 0.47843137, g: 0.035294104, b: 0.036790986, a: 0}
-    - _InnerColor: {r: 0.046200667, g: 0.09449714, b: 0.20125782, a: 0}
+    - _EmissiveColor: {r: 0.1509434, g: 0.06429548, b: 0.03180251, a: 0}
+    - _InnerColor: {r: 0.050314426, g: 0.026151486, b: 0.019461235, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []

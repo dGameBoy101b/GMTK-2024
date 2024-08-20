@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &7683811265778514837
+--- !u!1001 &6046541475025860523
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -58,45 +58,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3993317156757771569, guid: 0a3f075d9d692fe47b1306ff74a2ccbc,
+    - target: {fileID: 2325207268154876565, guid: 0a3f075d9d692fe47b1306ff74a2ccbc,
         type: 3}
-      propertyPath: EventReference.Path
-      value: event:/Music/Title Screen Music
-      objectReference: {fileID: 0}
-    - target: {fileID: 3993317156757771569, guid: 0a3f075d9d692fe47b1306ff74a2ccbc,
-        type: 3}
-      propertyPath: OverrideMaxDistance
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 3993317156757771569, guid: 0a3f075d9d692fe47b1306ff74a2ccbc,
-        type: 3}
-      propertyPath: OverrideMinDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3993317156757771569, guid: 0a3f075d9d692fe47b1306ff74a2ccbc,
-        type: 3}
-      propertyPath: EventReference.Guid.Data1
-      value: -496441227
-      objectReference: {fileID: 0}
-    - target: {fileID: 3993317156757771569, guid: 0a3f075d9d692fe47b1306ff74a2ccbc,
-        type: 3}
-      propertyPath: EventReference.Guid.Data2
-      value: 1315543598
-      objectReference: {fileID: 0}
-    - target: {fileID: 3993317156757771569, guid: 0a3f075d9d692fe47b1306ff74a2ccbc,
-        type: 3}
-      propertyPath: EventReference.Guid.Data3
-      value: -1555482454
-      objectReference: {fileID: 0}
-    - target: {fileID: 3993317156757771569, guid: 0a3f075d9d692fe47b1306ff74a2ccbc,
-        type: 3}
-      propertyPath: EventReference.Guid.Data4
-      value: 1092094734
+      propertyPath: OnStart.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Plains
       objectReference: {fileID: 0}
     - target: {fileID: 8243319362529309778, guid: 0a3f075d9d692fe47b1306ff74a2ccbc,
         type: 3}
       propertyPath: m_Name
-      value: Menu Music
+      value: Plains Music Changer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
