@@ -1496,7 +1496,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dc76f1d4ba11ec4ebf25ebac0396a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FPS: 60
+  rigidbody2D: {fileID: 3504863754584746088}
+  FPS: 12
 --- !u!1 &3967063096476533312
 GameObject:
   m_ObjectHideFlags: 0
@@ -8306,7 +8307,7 @@ PrefabInstance:
     - target: {fileID: 2458751235068332869, guid: 09cb5acb9e4b62d43913de13cadfb72f,
         type: 3}
       propertyPath: serializationData.SerializationNodes.Array.size
-      value: 0
+      value: 47
       objectReference: {fileID: 0}
     - target: {fileID: 2458751235068332869, guid: 09cb5acb9e4b62d43913de13cadfb72f,
         type: 3}

@@ -464,6 +464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dc76f1d4ba11ec4ebf25ebac0396a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rigidbody2D: {fileID: 6933270205993436850}
   FPS: 12
 --- !u!4 &1832877111053893267 stripped
 Transform:
@@ -474,6 +475,12 @@ Transform:
 --- !u!4 &2317874891569877513 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5359289724170187879, guid: cbc40997393248f4abfbc840c148c067,
+    type: 3}
+  m_PrefabInstance: {fileID: 7659140218494215790}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &6933270205993436850 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 755857028022837468, guid: cbc40997393248f4abfbc840c148c067,
     type: 3}
   m_PrefabInstance: {fileID: 7659140218494215790}
   m_PrefabAsset: {fileID: 0}

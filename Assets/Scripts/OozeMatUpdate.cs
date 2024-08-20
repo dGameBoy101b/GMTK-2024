@@ -7,6 +7,7 @@ public class OozeMatUpdate : MonoBehaviour
     private Material mat;
     private Vector3 previousPosition;
     private Vector3 velocityWarp;
+    [SerializeField] private Rigidbody2D rigidbody2D;
     [SerializeField] private float FPS;
 
     void Start()
@@ -19,14 +20,13 @@ public class OozeMatUpdate : MonoBehaviour
     
     void UpdateMaterialValues()
     {
-        Vector3 velocity = transform.position - previousPosition;
+        Vector3 velocity = rigidbody2D.velocity;
         velocityWarp = Vector3.Lerp(velocityWarp, velocity, 2f*(1f/FPS));
         
         mat.SetVector("_VelocityWarp", velocityWarp);
         mat.SetVector("_Velocity", velocity);
         mat.SetVector("_WorldPosition", transform.position);
         mat.SetFloat("_GameTime", Time.time);
-        previousPosition = transform.position;
     }
 
     IEnumerator MaterialTimer()
