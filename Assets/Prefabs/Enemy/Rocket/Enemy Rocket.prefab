@@ -5086,30 +5086,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Rocket
       objectReference: {fileID: 0}
-    - target: {fileID: 6988660611282595913, guid: cbc40997393248f4abfbc840c148c067,
+    - target: {fileID: 6911253802712980399, guid: cbc40997393248f4abfbc840c148c067,
         type: 3}
-      propertyPath: Curve.m_Curve.Array.data[1].value
-      value: 7
+      propertyPath: EventReference.Path
+      value: event:/SFX/Mob/Spaceship/Attack
       objectReference: {fileID: 0}
-    - target: {fileID: 6988660611282595913, guid: cbc40997393248f4abfbc840c148c067,
+    - target: {fileID: 6911253802712980399, guid: cbc40997393248f4abfbc840c148c067,
         type: 3}
-      propertyPath: Curve.m_Curve.Array.data[0].inSlope
-      value: 5
+      propertyPath: EventReference.Guid.Data1
+      value: -521520033
       objectReference: {fileID: 0}
-    - target: {fileID: 6988660611282595913, guid: cbc40997393248f4abfbc840c148c067,
+    - target: {fileID: 6911253802712980399, guid: cbc40997393248f4abfbc840c148c067,
         type: 3}
-      propertyPath: Curve.m_Curve.Array.data[1].inSlope
-      value: 5
+      propertyPath: EventReference.Guid.Data2
+      value: 1249371282
       objectReference: {fileID: 0}
-    - target: {fileID: 6988660611282595913, guid: cbc40997393248f4abfbc840c148c067,
+    - target: {fileID: 6911253802712980399, guid: cbc40997393248f4abfbc840c148c067,
         type: 3}
-      propertyPath: Curve.m_Curve.Array.data[0].outSlope
-      value: 5
+      propertyPath: EventReference.Guid.Data3
+      value: 38026921
       objectReference: {fileID: 0}
-    - target: {fileID: 6988660611282595913, guid: cbc40997393248f4abfbc840c148c067,
+    - target: {fileID: 6911253802712980399, guid: cbc40997393248f4abfbc840c148c067,
         type: 3}
-      propertyPath: Curve.m_Curve.Array.data[1].outSlope
-      value: 5
+      propertyPath: EventReference.Guid.Data4
+      value: -2029788840
       objectReference: {fileID: 0}
     - target: {fileID: 8297050495991601405, guid: cbc40997393248f4abfbc840c148c067,
         type: 3}
@@ -5161,12 +5161,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8742756210544677501, guid: cbc40997393248f4abfbc840c148c067,
-        type: 3}
-      propertyPath: Hit
-      value: 
-      objectReference: {fileID: 8686872590155133403, guid: 720c298ff29bc90458b97f6ca65d337f,
-        type: 3}
     - target: {fileID: 9093156823227115160, guid: cbc40997393248f4abfbc840c148c067,
         type: 3}
       propertyPath: m_Enabled
