@@ -52,8 +52,8 @@ MonoBehaviour:
   _minDelay: 5
   _remainingDelay: 0
   Origin: {fileID: 0}
-  _minRadius: 10
-  _maxRadius: 10
+  _minRadius: 15
+  _maxRadius: 50
   OnSpawn:
     m_PersistentCalls:
       m_Calls: []
