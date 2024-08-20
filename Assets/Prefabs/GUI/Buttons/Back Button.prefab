@@ -66,6 +66,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _delay: 1.5
+  _useUnscaled: 1
   _onTimeUp:
     m_PersistentCalls:
       m_Calls:
