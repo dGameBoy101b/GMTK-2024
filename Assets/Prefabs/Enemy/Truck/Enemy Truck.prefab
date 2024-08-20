@@ -399,6 +399,12 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 3329794105505740932, guid: cbc40997393248f4abfbc840c148c067,
+        type: 3}
+      propertyPath: OnEmpty.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 3553129257125191748, guid: 32799aff9f10a5a418088043129a58cf,
+        type: 3}
     - target: {fileID: 3612949995260686391, guid: cbc40997393248f4abfbc840c148c067,
         type: 3}
       propertyPath: EventReference.Path
