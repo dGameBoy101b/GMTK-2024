@@ -158,9 +158,6 @@
 		</property>
 	</object>
 	<object class="EventMixerGroup" id="{b88bbe3c-69fb-468a-bbb1-9a4ceb86ad60}">
-		<property name="volume">
-			<value>5</value>
-		</property>
 		<property name="name">
 			<value>truck</value>
 		</property>
