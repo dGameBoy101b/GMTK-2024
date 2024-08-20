@@ -23,6 +23,12 @@ PrefabInstance:
       propertyPath: ScenePath
       value: 0 - Main Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 5116493933304365350, guid: 6426bb1a0b9b6454a961e51520ab837c,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 13d769675b6dc53479a917501b9bee2e,
+        type: 3}
     - target: {fileID: 5360995320867230468, guid: 6426bb1a0b9b6454a961e51520ab837c,
         type: 3}
       propertyPath: m_Name
@@ -146,7 +152,12 @@ PrefabInstance:
     - target: {fileID: 7933476791368277517, guid: 6426bb1a0b9b6454a961e51520ab837c,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: -1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933476791368277517, guid: 6426bb1a0b9b6454a961e51520ab837c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
