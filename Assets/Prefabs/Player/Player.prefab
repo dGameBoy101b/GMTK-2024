@@ -1383,6 +1383,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _acceleration: 5
 --- !u!1 &4063443399785427929
 GameObject:
   m_ObjectHideFlags: 0
