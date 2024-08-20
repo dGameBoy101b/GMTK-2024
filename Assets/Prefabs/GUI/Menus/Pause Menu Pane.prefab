@@ -312,7 +312,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 2b17550c590413b41af8c049f2b8af45, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
@@ -692,6 +692,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5183757254440140149}
     m_Modifications:
+    - target: {fileID: 638105460188993722, guid: 0dd6d77f1986da5479fad76ff137196a,
+        type: 3}
+      propertyPath: _toDisable.Array.data[0]
+      value: 
+      objectReference: {fileID: 7645643377002676485}
     - target: {fileID: 1766781412874628071, guid: 0dd6d77f1986da5479fad76ff137196a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode

@@ -17,6 +17,15 @@ namespace WinterwireGames.Events
 		}
 
 		[SerializeField]
+		[Tooltip("Whether to use unscaled time")]
+		private bool _useUnscaled = false;
+		public bool UseUnscaled
+		{
+			get => this._useUnscaled;
+			set => this._useUnscaled = value;
+		}
+
+		[SerializeField]
 		[Tooltip("Invoked when this is invoked after its delay")]
 		private UnityEvent _onTimeUp = new();
 		public UnityEvent OnTimeUp => this._onTimeUp;
@@ -31,7 +40,7 @@ namespace WinterwireGames.Events
 
 		public void Invoke()
 		{
-			this.Invoke(Time.time);
+			this.Invoke(this.UseUnscaled? Time.unscaledTime : Time.time);
 		}
 
 		public void Invoke(float current_time)
@@ -56,7 +65,7 @@ namespace WinterwireGames.Events
 
 		private void Update()
 		{
-			this.UpdateInvocations(Time.time);
+			this.UpdateInvocations(this.UseUnscaled ? Time.unscaledTime : Time.time);
 		}
 
 		private void OnDisable()

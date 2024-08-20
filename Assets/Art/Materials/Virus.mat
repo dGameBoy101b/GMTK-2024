@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Virus
-  m_Shader: {fileID: -6465566751694194690, guid: c891fcd25dde12845ba3afed2da62053,
+  m_Shader: {fileID: -6465566751694194690, guid: d6e4ce67d5cbde042ab6dd3645e11a04,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
