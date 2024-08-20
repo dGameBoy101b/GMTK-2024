@@ -1115,8 +1115,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  BaseCooldown: 1
-  PowerCooldownCoefficient: 0.2
+  BaseCooldown: 0.3
+  PowerCooldownCoefficient: 0.15
   LastCooldown: 0
   OnCooldown:
     m_PersistentCalls:
