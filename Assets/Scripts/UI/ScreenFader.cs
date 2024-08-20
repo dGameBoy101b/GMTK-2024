@@ -29,6 +29,7 @@ public class ScreenFader : MonoBehaviour
 		{
 			this.StopCoroutine(this.Transition);
 		}
+		Debug.Log($"{this.name} fading in for {duration} seconds", this);
 		this.Transition = this.StartCoroutine(this.Fade(1, duration, this.OnFadeInStart, this.OnFadeInEnd));
 	}
 
@@ -38,7 +39,8 @@ public class ScreenFader : MonoBehaviour
 		{
 			this.StopCoroutine(this.Transition);
 		}
-			this.Transition = this.StartCoroutine(this.Fade(0, duration, this.OnFadeOutStart, this.OnFadeOutEnd));
+		Debug.Log($"{this.name} fading out for {duration} seconds", this);
+		this.Transition = this.StartCoroutine(this.Fade(0, duration, this.OnFadeOutStart, this.OnFadeOutEnd));
 	}
 
 	private void ChangeImageAlpha(float alpha)
@@ -53,7 +55,7 @@ public class ScreenFader : MonoBehaviour
 		var start_alpha = this.Image.color.a;
 		if (duration != 0)
 		{
-			for (float t = 0; t < 1; t = (Time.time - start_time) / duration)
+			for (float t = 0; t < 1; t = (Time.unscaledTime - start_time) / duration)
 			{
 				this.ChangeImageAlpha(Mathf.Lerp(start_alpha, alpha, t));
 				yield return null;
@@ -61,6 +63,7 @@ public class ScreenFader : MonoBehaviour
 		}
 		this.ChangeImageAlpha(alpha);
 		this.Transition = null;
+		Debug.Log($"{this.name} finished fading to alpha {alpha}", this);
 		on_end.Invoke();
 	}
 
