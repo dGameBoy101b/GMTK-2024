@@ -113,6 +113,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4866661044384700055, guid: 56f7c0dd275bd4d48a7ee0c4accaa7bc,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866661044384700055, guid: 56f7c0dd275bd4d48a7ee0c4accaa7bc,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866661044384700055, guid: 56f7c0dd275bd4d48a7ee0c4accaa7bc,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7522007095941966012, guid: 56f7c0dd275bd4d48a7ee0c4accaa7bc,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7522007095941966012, guid: 56f7c0dd275bd4d48a7ee0c4accaa7bc,
         type: 3}
       propertyPath: ShouldStartFadedOut

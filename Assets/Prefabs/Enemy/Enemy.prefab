@@ -817,7 +817,7 @@ MonoBehaviour:
   OnDirectionChange:
     m_PersistentCalls:
       m_Calls: []
-  _acceleration: 5
+  _acceleration: 8
 --- !u!114 &4579507117610789492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -865,17 +865,17 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 2
-      inSlope: 5
-      outSlope: 5
+      inSlope: 4
+      outSlope: 4
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
-      value: 7
-      inSlope: 5
-      outSlope: 5
+      value: 6
+      inSlope: 4
+      outSlope: 4
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334

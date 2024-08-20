@@ -58,10 +58,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2325207268154876565, guid: 0a3f075d9d692fe47b1306ff74a2ccbc,
+        type: 3}
+      propertyPath: OnStart.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Microbe
+      objectReference: {fileID: 0}
     - target: {fileID: 8243319362529309778, guid: 0a3f075d9d692fe47b1306ff74a2ccbc,
         type: 3}
       propertyPath: m_Name
-      value: Music
+      value: Microbe Music Changer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
