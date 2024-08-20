@@ -10,10 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4164808196604295375}
   - component: {fileID: 6982370318056083540}
+  - component: {fileID: 8069149823442249671}
   - component: {fileID: 3675450142331025993}
+  - component: {fileID: 8153176768640288304}
   m_Layer: 0
   m_Name: Music
-  m_TagString: Untagged
+  m_TagString: Music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64,6 +66,18 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &8069149823442249671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2291848105845398453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2089bd2312b538644829c6976523ab23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &3675450142331025993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,3 +90,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d54784a9a110484ebf361f6e2411efe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8153176768640288304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2291848105845398453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561fdfbe825d16f48894bc03b7e4f9d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3675450142331025993}
+        m_TargetAssemblyTypeName: DontDestroyOnLoad, Assembly-CSharp
+        m_MethodName: DontDestroy
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2291848105845398453}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
