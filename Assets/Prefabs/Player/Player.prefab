@@ -6673,7 +6673,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 0
+        m_CallState: 2
 --- !u!1 &4508092270997494756
 GameObject:
   m_ObjectHideFlags: 0
@@ -8306,7 +8306,7 @@ PrefabInstance:
     - target: {fileID: 2458751235068332869, guid: 09cb5acb9e4b62d43913de13cadfb72f,
         type: 3}
       propertyPath: serializationData.SerializationNodes.Array.size
-      value: 47
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2458751235068332869, guid: 09cb5acb9e4b62d43913de13cadfb72f,
         type: 3}
