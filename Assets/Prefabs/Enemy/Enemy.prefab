@@ -817,6 +817,7 @@ MonoBehaviour:
   OnDirectionChange:
     m_PersistentCalls:
       m_Calls: []
+  _acceleration: 5
 --- !u!114 &4579507117610789492
 MonoBehaviour:
   m_ObjectHideFlags: 0
