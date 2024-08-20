@@ -7057,7 +7057,7 @@ MonoBehaviour:
   m_Actions: {fileID: -944628639613478452, guid: 0b3c1fc791e982a44b70e1448c207fe9,
     type: 3}
   m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
+  m_UIInputModule: {fileID: 5832734282356028069}
   m_DeviceLostEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -7072,7 +7072,7 @@ MonoBehaviour:
   m_DefaultControlScheme: 
   m_DefaultActionMap: Goo
   m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1486464102012659098}
 --- !u!1 &5264428103064178713
 GameObject:
   m_ObjectHideFlags: 0
@@ -8277,6 +8277,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 937647858754980806}
     m_Modifications:
+    - target: {fileID: 2131425271911427392, guid: 09cb5acb9e4b62d43913de13cadfb72f,
+        type: 3}
+      propertyPath: _onPause.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1044137804647500292}
+    - target: {fileID: 2131425271911427392, guid: 09cb5acb9e4b62d43913de13cadfb72f,
+        type: 3}
+      propertyPath: _onResume.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1044137804647500292}
     - target: {fileID: 2458751235068332869, guid: 09cb5acb9e4b62d43913de13cadfb72f,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -8348,6 +8358,21 @@ PrefabInstance:
       propertyPath: _playerInput
       value: 
       objectReference: {fileID: 1044137804647500292}
+    - target: {fileID: 8346128570393066285, guid: 09cb5acb9e4b62d43913de13cadfb72f,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8346128570393066285, guid: 09cb5acb9e4b62d43913de13cadfb72f,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[15].m_ActionId
+      value: c8a21f63-28d2-49fe-8b84-3559ab910600
+      objectReference: {fileID: 0}
+    - target: {fileID: 8346128570393066285, guid: 09cb5acb9e4b62d43913de13cadfb72f,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[15].m_ActionName
+      value: Goo/Pause[/Keyboard/escape,/Keyboard/backspace]
+      objectReference: {fileID: 0}
     - target: {fileID: 8552898142198750967, guid: 09cb5acb9e4b62d43913de13cadfb72f,
         type: 3}
       propertyPath: m_Name
@@ -8375,6 +8400,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1149249266463794025}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5832734282356028069 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6845749555634442700, guid: 09cb5acb9e4b62d43913de13cadfb72f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1149249266463794025}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &6655861395552388976 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6029381685337990169, guid: 09cb5acb9e4b62d43913de13cadfb72f,
