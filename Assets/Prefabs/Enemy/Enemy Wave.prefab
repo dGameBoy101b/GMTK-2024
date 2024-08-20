@@ -149,7 +149,7 @@ MonoBehaviour:
   - {fileID: 3174941546507629517, guid: cbc40997393248f4abfbc840c148c067, type: 3}
   _maxCount: 10
   ShouldDestroyOld: 0
-  _minDelay: 0.2
+  _minDelay: 0.3
   _remainingDelay: 0
   Origin: {fileID: 6766544100314793750}
   _minRadius: 0

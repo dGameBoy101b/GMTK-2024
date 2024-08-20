@@ -49,7 +49,7 @@ MonoBehaviour:
   - {fileID: 8860332985989566089, guid: e9e9bf31e20fa5345922fb68a3b98842, type: 3}
   _maxCount: 10
   ShouldDestroyOld: 0
-  _minDelay: 5
+  _minDelay: 7.5
   _remainingDelay: 0
   Origin: {fileID: 0}
   _minRadius: 15
