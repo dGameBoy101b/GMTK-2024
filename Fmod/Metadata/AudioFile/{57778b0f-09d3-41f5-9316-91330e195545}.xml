@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{57778b0f-09d3-41f5-9316-91330e195545}">
 		<property name="assetPath">
-			<value>SFX/Mob/spaceship-idle.wav</value>
+			<value>SFX/Mob/Spaceship/spaceship-idle.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

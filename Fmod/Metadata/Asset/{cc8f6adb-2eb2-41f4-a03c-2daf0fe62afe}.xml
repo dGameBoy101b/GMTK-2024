@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{cc8f6adb-2eb2-41f4-a03c-2daf0fe62afe}">
+		<property name="assetPath">
+			<value>SFX/Mob/Virus/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d62e51ab-a92d-4030-a9e1-2904bb2cf8ad}</destination>
+		</relationship>
+	</object>
+</objects>

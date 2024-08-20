@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{2d9a971c-60a6-48d7-a392-bce7d6a023ef}">
 		<property name="assetPath">
-			<value>SFX/Mob/truck-idle.wav</value>
+			<value>SFX/Mob/Truck/truck-idle.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

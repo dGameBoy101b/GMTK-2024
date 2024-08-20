@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{3d9324e9-d204-4c65-8811-975a7f60ac55}">
 		<property name="name">
-			<value>Truck idle</value>
+			<value>Idle</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
 		</property>
 		<relationship name="folder">
-			<destination>{683b986a-950a-4ab7-a2db-6fcbbcede033}</destination>
+			<destination>{58b01392-de25-4ad4-9eb0-39b02a0f87b9}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{442793fb-4541-4b4f-b9c5-01e4bd07a8f0}</destination>
