@@ -171,7 +171,6 @@
 	<object class="MixerBusEffectChain" id="{e323c8db-51b2-4b34-8996-a6375549320a}">
 		<relationship name="effects">
 			<destination>{5819e30e-0873-47ba-927f-c9a621bdf8de}</destination>
-			<destination>{36aa467c-d6d8-4ea0-a252-044f2c7dee48}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{dfe3ce65-ba3e-41ee-b428-fcbeaa34b355}" />
@@ -204,17 +203,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{a28ff774-2385-425f-834a-1dd762deb814}" />
 	<object class="MixerBusFader" id="{5819e30e-0873-47ba-927f-c9a621bdf8de}" />
-	<object class="ObjectSpatialiserEffect" id="{36aa467c-d6d8-4ea0-a252-044f2c7dee48}">
-		<property name="extentMode">
-			<value>1</value>
-		</property>
-		<property name="soundSize">
-			<value>5</value>
-		</property>
-		<property name="minimumExtent">
-			<value>45</value>
-		</property>
-	</object>
 	<object class="MixerBusFader" id="{537f9eac-bcbd-415f-9589-d966523f4bb4}" />
 	<object class="MixerBusFader" id="{4d38a2b9-57b4-4766-a138-13f25cbf4070}" />
 </objects>

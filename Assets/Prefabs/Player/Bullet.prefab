@@ -345,6 +345,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1752433927383945375}
   - component: {fileID: 6313970869822801448}
+  - component: {fileID: 8197015353644038178}
   m_Layer: 8
   m_Name: Explode
   m_TagString: Untagged
@@ -382,6 +383,37 @@ MonoBehaviour:
   _power: 1
   _explosion: {fileID: 7803762036083640360, guid: f58638fdc8f6619438e8e85c2003eac8,
     type: 3}
+--- !u!114 &8197015353644038178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4266410150508836155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 747304947
+      Data2: 1313721380
+      Data3: 638506905
+      Data4: -1398123945
+    Path: event:/SFX/Player/Slime Shot Death
+  Event: 
+  PlayEvent: 11
+  StopEvent: 1
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 30
 --- !u!1 &4462110546764275469
 GameObject:
   m_ObjectHideFlags: 0
