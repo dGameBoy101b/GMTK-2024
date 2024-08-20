@@ -97,7 +97,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{bb79fef3-e4ea-4faf-a721-49ca1c422af9}">
 		<property name="volume">
-			<value>-9.5</value>
+			<value>-15</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{210386c0-28a7-4da9-989f-e96f1627137d}</destination>
@@ -177,9 +177,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{a4d6780c-d079-48cc-9279-843ba98eb64f}">
-		<property name="volume">
-			<value>-10</value>
-		</property>
 		<property name="name">
 			<value>bubble</value>
 		</property>

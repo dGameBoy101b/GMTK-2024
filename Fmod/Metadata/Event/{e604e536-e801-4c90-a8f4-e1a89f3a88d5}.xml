@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{e604e536-e801-4c90-a8f4-e1a89f3a88d5}">
 		<property name="name">
-			<value>Level 3 Ambience</value>
+			<value>Space Ambience</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>
@@ -330,6 +330,7 @@
 	<object class="MixerBusEffectChain" id="{64b6c075-ec9d-4644-b1cc-3836952bff80}">
 		<relationship name="effects">
 			<destination>{eb05593d-b66a-4c23-b72d-0cf98192efbe}</destination>
+			<destination>{af1a5c53-1293-47db-8004-0d7cfeaeed19}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{6b52a6d0-f9f1-4179-9583-a0bb53d9ecba}" />
@@ -449,6 +450,17 @@
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{eb05593d-b66a-4c23-b72d-0cf98192efbe}" />
+	<object class="MultibandEqEffect" id="{af1a5c53-1293-47db-8004-0d7cfeaeed19}">
+		<property name="filterTypeA">
+			<value>10</value>
+		</property>
+		<property name="frequencyA">
+			<value>75.320816</value>
+		</property>
+		<property name="qualityA">
+			<value>2.69555831</value>
+		</property>
+	</object>
 	<object class="AutomationPoint" id="{65b46aa2-e3ca-48c6-b557-4e5a4de4612d}">
 		<property name="position">
 			<value>0</value>
