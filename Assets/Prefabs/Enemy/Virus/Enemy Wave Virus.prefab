@@ -60,6 +60,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6805171989438654954, guid: e9e9bf31e20fa5345922fb68a3b98842,
         type: 3}
+      propertyPath: _maxCount
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6805171989438654954, guid: e9e9bf31e20fa5345922fb68a3b98842,
+        type: 3}
+      propertyPath: _minDelay
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6805171989438654954, guid: e9e9bf31e20fa5345922fb68a3b98842,
+        type: 3}
       propertyPath: Spawnables.Array.data[0]
       value: 
       objectReference: {fileID: 5063475282903963043, guid: 242bcfcf110675746bd679cd516ee47b,

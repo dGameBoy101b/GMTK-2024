@@ -15,6 +15,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2952778871950591870, guid: 93c2dd5238a29804f9b5e255cb33aa6a,
         type: 3}
+      propertyPath: _minDelay
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952778871950591870, guid: 93c2dd5238a29804f9b5e255cb33aa6a,
+        type: 3}
       propertyPath: Spawnables.Array.data[0]
       value: 
       objectReference: {fileID: 4149410735048645611, guid: 0c4b36ad1571c2545811f42203ed021e,
