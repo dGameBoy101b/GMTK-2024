@@ -74,7 +74,7 @@ Material:
     m_Colors:
     - _Color: {r: 0.22643483, g: 0.67295593, b: 0.3829648, a: 0}
     - _EmissiveColor: {r: 0, g: 0.8862745, b: 0.59328544, a: 0}
-    - _InnerGlowColor: {r: 0.6784314, g: 0.1254902, b: 0, a: 0}
+    - _InnerGlowColor: {r: 0.8553459, g: 0.16479088, b: 0.008069167, a: 0}
     - _Velocity: {r: 0, g: 0, b: 0, a: 0}
     - _VelocityWarp: {r: 0, g: 0, b: 0, a: 0}
     - _WorldPosition: {r: 0, g: 0, b: 0, a: 0}
