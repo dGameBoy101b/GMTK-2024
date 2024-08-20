@@ -55,23 +55,50 @@ public class Move : MonoBehaviour
 		set => this._acceleration = Mathf.Max(value, 0);
 	}
 
-	public Vector2 CalculateForce(float delta_time)
+	public Vector2 CalculateForce(float delta_time, Vector2 velocity)
 	{
-		var target = this.CurrentDirection * this.MaxMoveSpeed;
-		var difference = target - this.Body.velocity;
+		var difference = this.Target - velocity;
 		var max_magnitude = difference.magnitude / delta_time;
 		var force = this.Acceleration == Mathf.Infinity
 			? difference.normalized * max_magnitude
 			: Vector2.ClampMagnitude(difference * this.Acceleration, max_magnitude);
-		Debug.DrawRay(this.Body.position, target, Color.blue, delta_time);
-		Debug.DrawRay(this.Body.position, this.Body.velocity, Color.white, delta_time);
-		Debug.DrawRay(this.Body.position, force, Color.cyan, delta_time);
+		this.LastForce = force;
 		return force;
 	}
 
+	public void ApplyForce(float delta_time)
+	{
+		var force = this.CalculateForce(delta_time, this.Body.velocity);
+		this.Body.AddForce(force, ForceMode2D.Force);
+	}
+
+	#region Gizmos
+	public Vector2 Target => this.CurrentDirection * this.MaxMoveSpeed;
+
+	public Vector2? LastForce { get; private set; } = null;
+
+	public void DrawGizmo()
+	{
+		if (this.Body == null)
+			return;
+		Gizmos.color = Color.blue;
+		Gizmos.DrawRay(this.Body.position, this.Target);
+		Gizmos.color = Color.white;
+		Debug.DrawRay(this.Body.position, this.Body.velocity);
+		if (this.LastForce == null)
+			return;
+		Gizmos.color = Color.cyan;
+		Gizmos.DrawRay(this.Body.position, this.LastForce.Value);
+	}
+	#endregion
+
 	private void FixedUpdate()
 	{
-		var force = this.CalculateForce(Time.fixedDeltaTime);
-		this.Body.AddForce(force, ForceMode2D.Force);
+		this.ApplyForce(Time.fixedDeltaTime);
+	}
+
+	private void OnDrawGizmosSelected()
+	{
+		this.DrawGizmo();
 	}
 }
