@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{ad46fc2d-f4a1-4293-b250-04b232bdbded}">
 		<property name="name">
-			<value>Level 1 Ambience</value>
+			<value>Mircrobe Ambience</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>
@@ -272,6 +272,7 @@
 	<object class="MixerBusEffectChain" id="{36358e56-9328-41c5-8611-973c8ef3fdc1}">
 		<relationship name="effects">
 			<destination>{0f7d577e-d3c9-454d-b04e-ac2674d02d8a}</destination>
+			<destination>{4ecbf633-1770-44d3-9ad0-37a5fa7d70cc}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{4bc8f4f6-f92a-4f8e-a553-c76371bcb831}" />
@@ -340,6 +341,23 @@
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{0f7d577e-d3c9-454d-b04e-ac2674d02d8a}" />
+	<object class="MultibandEqEffect" id="{4ecbf633-1770-44d3-9ad0-37a5fa7d70cc}">
+		<property name="filterTypeA">
+			<value>10</value>
+		</property>
+		<property name="frequencyA">
+			<value>1583.61926</value>
+		</property>
+		<property name="frequencyB">
+			<value>387.055267</value>
+		</property>
+		<property name="qualityA">
+			<value>3.73564458</value>
+		</property>
+		<property name="qualityB">
+			<value>10</value>
+		</property>
+	</object>
 	<object class="AutomationPoint" id="{8741a619-ca7a-4be8-93ba-7188424fe9c5}">
 		<property name="position">
 			<value>94.066170570987637</value>

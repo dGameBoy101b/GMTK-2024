@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 72964251992000207, guid: b19b9ef29ea770e43aa4351f4777b442,
         type: 3}
       propertyPath: m_Name
-      value: Ambience Microbe
+      value: Microbe Ambience
       objectReference: {fileID: 0}
     - target: {fileID: 2735684208198840058, guid: b19b9ef29ea770e43aa4351f4777b442,
         type: 3}
@@ -66,7 +66,7 @@ PrefabInstance:
     - target: {fileID: 6873005435433477025, guid: b19b9ef29ea770e43aa4351f4777b442,
         type: 3}
       propertyPath: EventReference.Path
-      value: event:/Ambience/Level 1 Ambience
+      value: event:/Ambience/Mircrobe Ambience
       objectReference: {fileID: 0}
     - target: {fileID: 6873005435433477025, guid: b19b9ef29ea770e43aa4351f4777b442,
         type: 3}
