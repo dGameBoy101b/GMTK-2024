@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{2d9a971c-60a6-48d7-a392-bce7d6a023ef}">
+	<object class="AudioFile" id="{55f717af-b42c-4055-9c83-1e1e645bc6df}">
 		<property name="assetPath">
-			<value>SFX/Mob/Truck/truck-idle.wav</value>
-		</property>
-		<property name="isStreaming">
-			<value>true</value>
+			<value>SFX/Mob/Truck/truck-attack-debris-2.1.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
 		</property>
 		<property name="channelCount">
-			<value>2</value>
+			<value>6</value>
 		</property>
 		<property name="length">
-			<value>15.012666666666666</value>
+			<value>1.3592500000000001</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{d62e51ab-a92d-4030-a9e1-2904bb2cf8ad}</destination>
