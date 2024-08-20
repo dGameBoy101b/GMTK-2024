@@ -5,7 +5,7 @@
 			<value>Idle</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>5</value>
 		</property>
 		<relationship name="folder">
 			<destination>{b4627d10-f28f-4449-b9e1-f762b66675fd}</destination>
@@ -133,7 +133,7 @@
 	<object class="MixerBusPanner" id="{35107bc4-c1a7-4d72-924b-e4a25dc8e83a}" />
 	<object class="SingleSound" id="{01adffef-81ff-474b-b8ef-f191c43e0fb0}">
 		<property name="length">
-			<value>17.743333333333332</value>
+			<value>17.74325</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{e9099344-eb26-4997-8ead-5325cb446d54}</destination>
