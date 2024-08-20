@@ -44,8 +44,34 @@ public class Move : MonoBehaviour
 	[Tooltip("Invoked when the current direction is set")]
 	public UnityEvent<Vector2> OnDirectionChange = new();
 
+	[SerializeField]
+	[FormerlySerializedAs("_dampingCoefficient")]
+	[Tooltip("How quickly this should accelerate")]
+	[Min(0)]
+	private float _acceleration = Mathf.Infinity;
+	public float Acceleration
+	{
+		get => this._acceleration;
+		set => this._acceleration = Mathf.Max(value, 0);
+	}
+
+	public Vector2 CalculateForce(float delta_time)
+	{
+		var target = this.CurrentDirection * this.MaxMoveSpeed;
+		var difference = target - this.Body.velocity;
+		var max_magnitude = difference.magnitude / delta_time;
+		var force = this.Acceleration == Mathf.Infinity
+			? difference.normalized * max_magnitude
+			: Vector2.ClampMagnitude(difference * this.Acceleration, max_magnitude);
+		Debug.DrawRay(this.Body.position, target, Color.blue, delta_time);
+		Debug.DrawRay(this.Body.position, this.Body.velocity, Color.white, delta_time);
+		Debug.DrawRay(this.Body.position, force, Color.cyan, delta_time);
+		return force;
+	}
+
 	private void FixedUpdate()
 	{
-		this.Body.velocity = this.CurrentDirection * this.MaxMoveSpeed;
+		var force = this.CalculateForce(Time.fixedDeltaTime);
+		this.Body.AddForce(force, ForceMode2D.Force);
 	}
 }
