@@ -8338,6 +8338,11 @@ PrefabInstance:
       propertyPath: Aim
       value: 
       objectReference: {fileID: 488656889014738013}
+    - target: {fileID: 4529201706427603296, guid: 09cb5acb9e4b62d43913de13cadfb72f,
+        type: 3}
+      propertyPath: _camera
+      value: 
+      objectReference: {fileID: 1486464102012659098}
     - target: {fileID: 5205604983963050972, guid: 09cb5acb9e4b62d43913de13cadfb72f,
         type: 3}
       propertyPath: _playerInput
