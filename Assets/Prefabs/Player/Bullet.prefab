@@ -110,7 +110,7 @@ MonoBehaviour:
   OnPower:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5816406915363981005}
+      - m_Target: {fileID: 6974984788520427623}
         m_TargetAssemblyTypeName: Calculator`2[[System.Single, mscorlib
         m_MethodName: DoCalculation
         m_Mode: 0
@@ -474,7 +474,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2644804739482557786}
-  - component: {fileID: 5816406915363981005}
+  - component: {fileID: 6974984788520427623}
+  - component: {fileID: 6636045876966735493}
   m_Layer: 8
   m_Name: Size
   m_TagString: Untagged
@@ -497,7 +498,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5632608922043229077}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5816406915363981005
+--- !u!114 &6974984788520427623
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -506,7 +507,58 @@ MonoBehaviour:
   m_GameObject: {fileID: 4672296324128788069}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d29d10991c971394e9c81cb95c52f013, type: 3}
+  m_Script: {fileID: 11500000, guid: 7aafe617b6639264e9af12e77a6f95d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnOutput:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6636045876966735493}
+        m_TargetAssemblyTypeName: Calculator`2[[System.Single, mscorlib
+        m_MethodName: DoCalculation
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.2
+      inSlope: 0.56
+      outSlope: 0.56
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 5
+      value: 3
+      inSlope: 0.56
+      outSlope: 0.56
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &6636045876966735493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4672296324128788069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f734669a3fddc8a4e9e2c27f6c5ed827, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   OnOutput:
@@ -524,8 +576,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  Base: {x: 1, y: 1, z: 1}
-  Coefficient: 0.2
+  _base: {x: 1, y: 1, z: 1}
+  _coefficient: 1
 --- !u!1 &7959676755705872661
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,6 +785,9 @@ MonoBehaviour:
   _body: {fileID: 135725081353394430}
   _maxMoveSpeed: 10
   _currentDirection: {x: 0, y: 0}
+  OnDirectionChange:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &8670518888618021480
 GameObject:
   m_ObjectHideFlags: 0
