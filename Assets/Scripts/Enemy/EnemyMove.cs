@@ -10,7 +10,7 @@ public class EnemyMove : MonoBehaviour
 
 	public void UpdateDirection()
 	{
-		this.Move.CurrentDirection = this.Enemy.Target.position - this.Move.transform.position;
+		this.Move.CurrentDirection = (this.Enemy.Target.position - this.Move.transform.position).normalized;
 	}
 
 	private void Update()

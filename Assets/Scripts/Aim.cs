@@ -1,9 +1,24 @@
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class Aim : MonoBehaviour
 {
+	[SerializeField]
+	[FormerlySerializedAs("Direction")]
 	[Tooltip("The direction this is aiming")]
-	public Vector2 Direction = Vector2.right;
+	private Vector2 _direction = Vector2.right;
+	public Vector2 Direction
+	{
+		get => this._direction;
+		set
+		{
+			this._direction = value;
+			this.OnDirectionChange.Invoke(value);
+		}
+	}
+
+	public UnityEvent<Vector2> OnDirectionChange = new();
 
 	#region Gizmos
 	public void DrawGizmo()

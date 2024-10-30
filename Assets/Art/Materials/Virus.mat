@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Virus
-  m_Shader: {fileID: -6465566751694194690, guid: c891fcd25dde12845ba3afed2da62053,
+  m_Shader: {fileID: -6465566751694194690, guid: d6e4ce67d5cbde042ab6dd3645e11a04,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -56,22 +56,25 @@ Material:
     m_Ints: []
     m_Floats:
     - _GameTime: 0
-    - _Metallic: 0
+    - _InnerGlowSpeed: 0.32
+    - _Metallic: 0.4
     - _NoiseOffset: 0.05
     - _NoiseScale: 1.17
     - _NoiseSpeed: 0.17
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _Smoothness: 0.21
     - _Time: 0
-    - _UVNoiseOffset: 5.55
+    - _UVNoiseOffset: 7
     - _UVNoiseScale: 1.13
     - _UVNoiseSpeed: 0.1
-    - _VelosityWarpStrength: 100
+    - _VelosityWarpStrength: 0
     - _WorldNoiseOffset: 0.52
     - _WorldNoiseScale: 0.37
     m_Colors:
-    - _Color: {r: 0.19999997, g: 0.75673544, b: 0.8980392, a: 0}
-    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 0.0013843457, g: 0.19821747, b: 0.44025147, a: 0}
+    - _EmissiveColor: {r: 1.4442357, g: 0, b: 0, a: 0}
+    - _InnerGlowColor: {r: 0.67295593, g: 0, b: 0, a: 0}
     - _Velocity: {r: 0, g: 0, b: 0, a: 0}
     - _VelocityWarp: {r: 0, g: 0, b: 0, a: 0}
     - _WorldPosition: {r: 0, g: 0, b: 0, a: 0}

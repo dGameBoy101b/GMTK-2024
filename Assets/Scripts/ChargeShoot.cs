@@ -20,6 +20,9 @@ public class ChargeShoot : MonoBehaviour
 	[Tooltip("Invoked every frame while this is charging.\nParameter is current charge amount")]
 	public UnityEvent<float> OnChargeUp = new();
 
+	[Tooltip("Invoked when the charge is released and shot")]
+	public UnityEvent OnRelease = new();
+
 	[Tooltip("How quickly shots should cool down")]
 	public float BaseCooldown = 1f;
 
@@ -64,6 +67,7 @@ public class ChargeShoot : MonoBehaviour
 		this.LastCooldown = this.CurrentPower * this.PowerCooldownCoefficient + this.BaseCooldown;
 		this.Shoot.MaxCooldown = this.LastCooldown;
 		this.Shoot.Power = this.CurrentPower;
+		this.OnRelease.Invoke();
 		this.Shoot.Shot();
 	}
 

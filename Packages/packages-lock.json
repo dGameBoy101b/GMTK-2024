@@ -7,6 +7,12 @@
       "dependencies": {},
       "hash": "d5ba81e4a9bbc2b93401691b5ef3b5532e7c68bb"
     },
+    "com.unity.2d.sprite": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
     "com.unity.burst": {
       "version": "1.8.9",
       "depth": 1,
@@ -201,6 +207,13 @@
       "source": "git",
       "dependencies": {},
       "hash": "f2a2b1317bb870661312a863fe8aadd3d1dced3c"
+    },
+    "com.winterwiregames.option-io-components": {
+      "version": "https://github.com/Winterwire-Games/Option-IO-Components-Package.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "46012336fc59579aadd3810a5810a7bd91440168"
     },
     "com.winterwiregames.visualeffectparameters": {
       "version": "https://github.com/Winterwire-Games/Visual-Effect-Parameters-Package.git",

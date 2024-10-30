@@ -1,12 +1,9 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class MoveDirection : MonoBehaviour
 {
-	[Tooltip("The move component whose direction should be controlled")]
-	public Move Move;
+	public UnityEvent<Vector2> OnDirection = new();
 
-	public void UpdateDirection(Vector2 direction)
-	{
-		this.Move.CurrentDirection = direction;
-	}
+	public void GetDirection(Move move) => this.OnDirection.Invoke(move.CurrentDirection);
 }
